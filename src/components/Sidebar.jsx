@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../styles/Sidebar.css'
+import { Home, User, Settings, Save } from 'lucide-react'
 
 const Sidebar = () => {
   return (
