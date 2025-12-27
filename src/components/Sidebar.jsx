@@ -5,16 +5,17 @@ import '../styles/Sidebar.css'
 const Sidebar = () => {
   return (
     <div className='sidebar'>
-        <Link to={'/'}>
+      <div className='menus'>
+        <Link to={'/'} className='menu'>
             Home
         </Link>
-        <Link to={'/about'}>
+        <Link to={'/about'} className='menu'>
             About
         </Link>
-        <Link to={'/contact'}>
+        <Link to={'/contact'} className='menu'>
             Contact
         </Link>
-
+        </div>
     </div>
   )
 }
