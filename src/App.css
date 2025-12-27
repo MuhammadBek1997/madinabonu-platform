@@ -6,7 +6,9 @@
 /* ranglar almashinuvi uchun berilgan stillar */
 
 :root {
-  --text: #fffffff2;
+  --text:white;
+  --text1: #000000F2;
+  --text2: #E9033A;
   --bg: #1A1A1A;
   --bg-cont: #000000;
   --border: #363636;
@@ -14,14 +16,13 @@
   --glass-bg: #000000BF;
   --border-cont:#333333;
   --text-cont1: #FFFFFF80;
-  --text1: #000000F2;
-  --text2: #E9033A;
   --bg-del: #0D0D0D;
 }
 
 [data-theme="dark"] {
-  --text: #000000F2;
+  --text: black;
   --text1: #FFFFFFF2;
+  --text2: #E9033A;
   --bg: #F8FAFC;
   --bg-cont: white;
   --border: #F0F0F0;
@@ -29,7 +30,6 @@
   --glass-bg: #000000BF;
   --border-cont: #CECECE;
   --text-cont1: #00000080;
-  --text2: #E9033A;
   --bg-del:#fdfbfb;
 
 }
