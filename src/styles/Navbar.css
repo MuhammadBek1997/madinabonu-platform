@@ -1,5 +1,15 @@
 .navbar{
+    position: fixed;
+    width: 83.5%;
+    height: fit-content;
+    background-color: var(--bg);
+    border: 1px solid var(--border-cont);
+    padding: 1rem;
+    border-radius: 0.4rem;
+    font-weight: bolder;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    top: 1%;
+
 }

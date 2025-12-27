@@ -1,0 +1,11 @@
+.sidebar {
+    width: 11vw;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg);
+    border: 1px solid var(--border-cont);
+    padding: 1rem;
+    top: 1%;
+    border-radius: 0.4rem;
+
+}
