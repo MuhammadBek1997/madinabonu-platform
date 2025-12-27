@@ -44,7 +44,10 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-
+section{
+  padding-top: 6.7rem;
+  padding-left: 15vw !important;
+}
 
 
 

@@ -1,0 +1,53 @@
+.hero {
+    width: 60vw;
+    height: 30vh;
+    padding: 2rem;
+    background-color: var(--bg-del);
+    border: 1px solid var(--border-cont);
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 200px;
+    margin-left: 10vw;
+}
+
+h1{
+    margin-bottom: 1.5rem;
+    color: var(--text);
+}
+
+.for-words-btns{
+    width: 30vw;
+    color: var(--text-cont);
+    align-self: flex-start;
+}
+
+.btn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 17px;
+    
+}
+.courses-btn{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    color: var(--text);
+}
+
+.img-hero{
+    width: 500px;
+    height: 500px;
+}
+
+.btn{
+
+}
+    
