@@ -1,18 +1,23 @@
 import { Save } from 'lucide-react'
 
-const Home = ({user,theme,setTheme,setName,setSurname,name,surname,saveInfo}) => {
+const Home = ({user,theme,setTheme,setName,setSurname,name,surname,saveInfo,openTheme,setOpenTheme,handleChangeTheme}) => {
     
   return (
     <div>
         <div>
-            <select name="" id="" value={theme} onChange={(e)=>setTheme(e.target.value)}>
-                <option value="dark">
-                    Dark
-                </option>
-                <option value="light">
-                    Light
-                </option>
-            </select>
+            <button onClick={()=>setOpenTheme(!openTheme)}>
+                {theme == "dark" ? '🌙 Dark':'☀️Light'}
+            </button>
+            <div className='theme-menu' style={{
+                display:openTheme?"flex":"none"
+            }}>
+                <button onClick={()=>handleChangeTheme("dark")}>
+                    🌙 Dark
+                </button>
+                <button onClick={()=>handleChangeTheme("light")}>
+                    ☀️Light
+                </button>
+            </div>
         </div>
         <input type="text" value={name} onChange={(e)=>setName(e.target.value)} />
         <input type="text" value={surname} onChange={(e)=>setSurname(e.target.value)} />

@@ -17,6 +17,13 @@ function App() {
     return localStorage.getItem("theme") || "light"
   })
 
+  const [openTheme,setOpenTheme] = useState(true)
+  const handleChangeTheme = (T) =>{
+    setTheme(T)
+    setOpenTheme(false)
+  }
+
+
   const saveInfo = () => {
     setUser({ name: name, surname: surname })
   }
@@ -33,7 +40,7 @@ function App() {
     <div id={theme} className='body'>
       <Sidebar />
       <Routes>
-        <Route path='/' element={<Home user={user} name={name} surname={surname} setName={setName} setSurname={setSurname} setTheme={setTheme} theme={theme} saveInfo={saveInfo} />} />
+        <Route path='/' element={<Home openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} user={user} name={name} surname={surname} setName={setName} setSurname={setSurname} setTheme={setTheme} theme={theme} saveInfo={saveInfo} />} />
         <Route path='/about' element={<About user={user} />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
