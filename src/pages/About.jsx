@@ -1,8 +1,8 @@
 import React from 'react'
 
-const About = () => {
+const About = ({user}) => {
   return (
-    <div>About</div>
+    <div className='about'>About {user.name}</div>
   )
 }
 

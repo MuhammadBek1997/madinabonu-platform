@@ -2,3 +2,16 @@
   margin: 0;
   padding: 0;
 }
+:root{
+  --bg-light:yellow;
+  --bg-dark:darkblue;
+}
+
+.about{
+  width: 750px;
+  height: 400px;
+  background-color: var(--bg-light);
+}
+#dark .about{
+  background-color: var(--bg-dark);
+}
