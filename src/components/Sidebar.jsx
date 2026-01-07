@@ -8,13 +8,13 @@ const Sidebar = () => {
     <div className='sidebar'>
       <div className='menus'>
         <Link to={'/'} className='menu'>
-            Home
+           Bosh sahifa🏠
         </Link>
         <Link to={'/about'} className='menu'>
-            About
+        Kurslar 👩‍💻
         </Link>
         <Link to={'/contact'} className='menu'>
-            Contact
+           Loyigalar🧮
         </Link>
         </div>
     </div>
