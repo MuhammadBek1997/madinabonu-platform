@@ -35,6 +35,19 @@ function App() {
     localStorage.setItem("theme", theme)
   }, [theme,user])
 
+  let courses = [
+    {
+      img:"/images/rasm.png",
+      name: "Teacher Name",
+      subject:"Subject Name",
+      courses:"Course Duration (12soat)",
+      achievements:"Not yet",    
+      GroupPhotos:"Not yet"
+    
+    },
+   
+    
+  ];
 
   document.getElementById("root").parentElement.setAttribute("data-theme",theme)
 

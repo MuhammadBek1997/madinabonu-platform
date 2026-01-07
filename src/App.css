@@ -7,7 +7,7 @@
 
 :root {
   --text:white;
-  --text1: #000000F2;
+  --text1: #cec2c2f2;
   --text2: #E9033A;
   --bg: #1A1A1A;
   --bg-cont: #000000;
@@ -20,8 +20,8 @@
 }
 
 [data-theme="dark"] {
-  --text: black;
-  --text1: #FFFFFFF2;
+  --text: rgb(43, 39, 39);
+  --text1: #a3a0a0f2;
   --text2: #E9033A;
   --bg: #F8FAFC;
   --bg-cont: white;
