@@ -47,7 +47,58 @@ h1{
     height: 500px;
 }
 
-.btn{
 
+#item-list{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
+.card{
+   
+     margin-right: 0.5rem;
+        
+ 
+}
+.card h1{
+    font-weight: 500;
+    margin-left: 65px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.card-cont{
+    width: 315px;
+    height: 200px;
+    background: var(--bg);
+    border-radius: 8px;
+    border: 1px solid grey;
+
+   
+}
+.card-cont img{
+    width: 315px;
+    height: 160px;
+    border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+}
+.card-cont h2{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.kurs{
+    margin-left:150px ;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
     
+}
+.kurs img{
+margin-left:10px ;
+margin-top: -18px;
+    width: 22px;
+    height: 22px;
+}
