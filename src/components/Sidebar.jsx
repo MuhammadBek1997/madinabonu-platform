@@ -6,15 +6,18 @@ import { Home, User, Settings, Save } from 'lucide-react'
 const Sidebar = () => {
   return (
     <div className='sidebar'>
+      <h3 className='tag'>
+        Sahifalar
+      </h3>
       <div className='menus'>
         <Link to={'/'} className='menu'>
-           Bosh sahifa🏠
+           Bosh sahifa 🏠
         </Link>
         <Link to={'/about'} className='menu'>
         Kurslar 👩‍💻
         </Link>
         <Link to={'/contact'} className='menu'>
-           Loyigalar🧮
+           Loyigalar 🧮
         </Link>
         </div>
     </div>
