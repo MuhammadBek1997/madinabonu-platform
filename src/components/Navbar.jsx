@@ -1,5 +1,7 @@
 import React from 'react'
 import '../styles/Navbar.css'
+// App css import qilingan
+import '../style/App.css'    
 
 const Navbar = ( {user,theme,setTheme,setName,setSurname,name,surname,saveInfo,openTheme,setOpenTheme,handleChangeTheme}) => {
   return (
