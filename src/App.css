@@ -65,5 +65,9 @@ section{
   border: 1px solid;
 }
 
-
+.about-page{
+  width: 100%;
+  padding-left: 23vw;
+  padding-top:10vw ;
+}
 

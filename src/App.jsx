@@ -41,8 +41,9 @@ function App() {
       <Sidebar />
       <Routes>
         <Route path='/' element={<Home openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} user={user} name={name} surname={surname} setName={setName} setSurname={setSurname} setTheme={setTheme} theme={theme} saveInfo={saveInfo} />} />
-        <Route path='/about' element={<About user={user} />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/kurslar' element={<About user={user} />} />
+        <Route path='/loyihalar' element={<Contact />} />
+        <Route path='/testlar' element={<Contact />} />
       </Routes>
     </div>
   )

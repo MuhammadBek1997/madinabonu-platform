@@ -13,12 +13,15 @@ const Sidebar = () => {
         <Link to={'/'} className='menu'>
            Bosh sahifa 🏠
         </Link>
-        <Link to={'/about'} className='menu'>
+        <Link to={'/kurslar'} className='menu'>
         Kurslar 👩‍💻
         </Link>
-        <Link to={'/contact'} className='menu'>
-           Loyigalar 🧮
+        <Link to={'/loyihalar'} className='menu'>
+           Loyihalar 🧮
         </Link>
+      <Link to={'/testlar'} className='menu'>
+        Testlar 📃
+      </Link>
         </div>
     </div>
   )
