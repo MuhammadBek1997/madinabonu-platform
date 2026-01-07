@@ -2,10 +2,11 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Sidebar from './components/Sidebar'
 import Home from './pages/Home'
-import About from './pages/About'
-import Contact from './pages/Contact'
+
 import { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
+import Teachers from './pages/Teachers'
+import TopStudents from './pages/TopStudents'
 
 function App() {
 
