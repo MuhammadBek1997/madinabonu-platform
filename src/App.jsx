@@ -42,10 +42,89 @@ function App() {
       subject:"Subject Name",
       courses:"Course Duration (12soat)",
       achievements:"Not yet",    
-      GroupPhotos:"Not yet"
-    
+      GroupPhotos:"Not yet",
+      WorkExperience:"100yil",
+      students:"Fitfilyonta",
+      AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
     },
-   
+    {
+      img:"/images/rasm.png",
+      name: "Teacher Name",
+      subject:"Subject Name",
+      courses:"Course Duration (12soat)",
+      achievements:"Not yet",    
+      GroupPhotos:"Not yet",
+      WorkExperience:"100yil",
+      students:"Fitfilyonta",
+      AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
+    },
+    {
+      img:"/images/rasm.png",
+      name: "Teacher Name",
+      subject:"Subject Name",
+      courses:"Course Duration (12soat)",
+      achievements:"Not yet",    
+      GroupPhotos:"Not yet",
+      WorkExperience:"100yil",
+      students:"Fitfilyonta",
+      AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
+    },
+    {
+      img:"/images/rasm.png",
+      name: "Teacher Name",
+      subject:"Subject Name",
+      courses:"Course Duration (12soat)",
+      achievements:"Not yet",    
+      GroupPhotos:"Not yet",
+      WorkExperience:"100yil",
+      students:"Fitfilyonta",
+      AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
+    },
+    {
+      img:"/images/rasm.png",
+      name: "Teacher Name",
+      subject:"Subject Name",
+      courses:"Course Duration (12soat)",
+      achievements:"Not yet",    
+      GroupPhotos:"Not yet",
+      WorkExperience:"100yil",
+      students:"Fitfilyonta",
+      AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
+    },
+    {
+      img:"/images/rasm.png",
+      name: "Teacher Name",
+      subject:"Subject Name",
+      courses:"Course Duration (12soat)",
+      achievements:"Not yet",    
+      GroupPhotos:"Not yet",
+      WorkExperience:"100yil",
+      students:"Fitfilyonta",
+      AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
+    },
+    {
+      img:"/images/rasm.png",
+      name: "Teacher Name",
+      subject:"Subject Name",
+      courses:"Course Duration (12soat)",
+      achievements:"Not yet",    
+      GroupPhotos:"Not yet",
+      WorkExperience:"100yil",
+      students:"Fitfilyonta",
+      AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
+    },
+    {
+      img:"/images/rasm.png",
+      name: "Teacher Name",
+      subject:"Subject Name",
+      courses:"Course Duration (12soat)",
+      achievements:"Not yet",    
+      GroupPhotos:"Not yet",
+      WorkExperience:"100yil",
+      students:"Fitfilyonta",
+      AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
+    },
+    
     
   ];
 
@@ -57,7 +136,7 @@ function App() {
       <Navbar theme={theme} openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} />
       <Routes>
         <Route path='/' element={<Home openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} user={user} name={name} surname={surname} setName={setName} setSurname={setSurname} setTheme={setTheme} theme={theme} saveInfo={saveInfo} />} />
-        <Route path='/teachers' element={<Teachers user={user} />} />
+        <Route path='/teachers' element={<Teachers  courses={courses} user={user} />} />
         <Route path='/topStudents' element={<TopStudents />} />
       </Routes>
     </div>
