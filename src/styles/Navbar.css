@@ -41,3 +41,19 @@
     justify-content: center;
     gap: 10px;
 }
+
+.theme-menu{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+    background-color: white;
+    border: 1px solid;
+  }
+  
+  
