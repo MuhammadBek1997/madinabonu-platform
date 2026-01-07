@@ -16,10 +16,12 @@ const Sidebar = () => {
         <Link to={'/teachers'} className='menu'>
         Kurslar 👩‍💻
         </Link>
-        <Link to={'/topStudents'} className='menu'>
-           Loyihalar 🧮
+        <Link to={'/teachers'} className='menu'>
+        Teachers 👩🏻‍🏫
         </Link>
-     
+        <Link to={'/topStudents'} className='menu'>
+           Students 👨🏻‍🎓
+        </Link>
         </div>
     </div>
   )
