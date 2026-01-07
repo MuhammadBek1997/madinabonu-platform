@@ -17,7 +17,7 @@ function App() {
     return localStorage.getItem("theme") || "light"
   })
 
-  const [openTheme,setOpenTheme] = useState(true)
+  const [openTheme,setOpenTheme] = useState(false)
   const handleChangeTheme = (T) =>{
     setTheme(T)
     setOpenTheme(false)
@@ -34,13 +34,45 @@ function App() {
   }, [theme,user])
 
 
+  let courses = [
+    {
+      name:"Ingliz tili",
+      teacher:"Akmalkhon"
+    },
+    {
+      name:"Ingliz tili",
+      teacher:"Abdulaziz"
+    },
+    {
+      name:"Turk tili",
+      teacher:"Charos"
+    },
+    {
+      name:"Turk tili",
+      teacher:"Charos"
+    },
+    {
+      name:"Turk tili",
+      teacher:"Charos"
+    },
+    {
+      name:"Turk tili",
+      teacher:"Charos"
+    },
+    {
+      name:"Turk tili",
+      teacher:"Charos"
+    },
+  ]
+
+
   document.getElementById("root").parentElement.setAttribute("id",theme)
 
   return (
     <div id={theme} className='body'>
       <Sidebar />
       <Routes>
-        <Route path='/' element={<Home openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} user={user} name={name} surname={surname} setName={setName} setSurname={setSurname} setTheme={setTheme} theme={theme} saveInfo={saveInfo} />} />
+        <Route path='/' element={<Home courses={courses} openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} user={user} name={name} surname={surname} setName={setName} setSurname={setSurname} setTheme={setTheme} theme={theme} saveInfo={saveInfo} />} />
         <Route path='/about' element={<About user={user} />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>

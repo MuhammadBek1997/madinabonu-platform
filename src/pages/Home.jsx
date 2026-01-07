@@ -1,6 +1,6 @@
 import { Save } from 'lucide-react'
 
-const Home = ({user,theme,setTheme,setName,setSurname,name,surname,saveInfo,openTheme,setOpenTheme,handleChangeTheme}) => {
+const Home = ({theme,openTheme,setOpenTheme,handleChangeTheme,courses}) => {
     
   return (
     <div>
@@ -19,14 +19,24 @@ const Home = ({user,theme,setTheme,setName,setSurname,name,surname,saveInfo,open
                 </button>
             </div>
         </div>
-        <input type="text" value={name} onChange={(e)=>setName(e.target.value)} />
-        <input type="text" value={surname} onChange={(e)=>setSurname(e.target.value)} />
-        <button onClick={saveInfo}>
-            <Save/>
-        </button>
-        <h2>
-            {user.name}
-        </h2>
+        
+        {/* Kurslar ro'yhati */}
+        <div className='course-list'>
+            {
+                courses.map((item,index)=>{
+                    return(
+                        <div className='course-card' key={index}>
+                            <h2>
+                                {item.name}
+                            </h2>
+                            <h1>
+                                {item.teacher}
+                            </h1>
+                        </div>
+                    )
+                })
+            }
+        </div>
     </div>
   )
 }

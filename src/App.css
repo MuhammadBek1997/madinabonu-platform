@@ -29,3 +29,15 @@
   background-color: white;
   border: 1px solid;
 }
+
+.course-list{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap: 32px;
+}
+.course-card{
+  background-color: aqua;
+  border-radius: 15px;
+  padding: 32px;
+
+}
