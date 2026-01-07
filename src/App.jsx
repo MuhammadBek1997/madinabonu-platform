@@ -136,7 +136,7 @@ function App() {
       <Navbar theme={theme} openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} />
       <Routes>
         <Route path='/' element={<Home openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} user={user} name={name} surname={surname} setName={setName} setSurname={setSurname} setTheme={setTheme} theme={theme} saveInfo={saveInfo} />} />
-        <Route path='/teachers' element={<Teachers  courses={courses} user={user} />} />
+        <Route path='/teachers' element={<Teachers name={name} subject={subject} achievements={achievements}  courses={courses} user={user} />} />
         <Route path='/topStudents' element={<TopStudents />} />
       </Routes>
     </div>
