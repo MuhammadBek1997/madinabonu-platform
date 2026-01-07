@@ -22,10 +22,10 @@ const Navbar = ( {user,theme,openTheme,setOpenTheme,handleChangeTheme}) => {
           display: openTheme ? "flex" : "none"
         }}>
           <button onClick={() => handleChangeTheme("dark")}>
-            🌙 Dark
+          ☀️Light
           </button>
           <button onClick={() => handleChangeTheme("light")}>
-            ☀️Light
+            🌙 Dark
           </button>
         </div>
         {/* end of theme menu */}
