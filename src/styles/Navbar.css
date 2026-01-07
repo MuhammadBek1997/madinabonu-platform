@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     position: fixed;
     width: 84%;
     height: fit-content;
@@ -7,11 +7,27 @@
     padding: 1rem;
     border-radius: 0.4rem;
     font-weight: bolder;
+
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
     top: 1%;
-    left:14%; 
-    font-size: 35px;   
+    left: 14%;
+    font-size: 35px;
+    z-index: 1000;
 }
+
+
+/* Nav-btns ichidagi elementlar ham yonma-yon turishi uchun */
+.nav-btns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
 
 #logotip {
     width: 50px;
@@ -19,7 +35,7 @@
     border-radius: 20px;
 }
 
-.word-logo{
+.word-logo {
     display: flex;
     align-items: center;
     justify-content: center;
