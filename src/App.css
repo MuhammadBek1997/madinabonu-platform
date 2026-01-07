@@ -63,6 +63,8 @@ section{
   z-index: 10;
   background-color: white;
   border: 1px solid;
+  top: 50px;
+  left: 70%;
 }
 
 .about-page{

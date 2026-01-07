@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import { useEffect, useState } from 'react'
+import Navbar from './components/Navbar'
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
     return localStorage.getItem("theme") || "light"
   })
 
-  const [openTheme,setOpenTheme] = useState(true)
+  const [openTheme,setOpenTheme] = useState(false)
   const handleChangeTheme = (T) =>{
     setTheme(T)
     setOpenTheme(false)
@@ -34,11 +35,12 @@ function App() {
   }, [theme,user])
 
 
-  document.getElementById("root").parentElement.setAttribute("id",theme)
+  document.getElementById("root").parentElement.setAttribute("data-theme",theme)
 
   return (
     <div id={theme} className='body'>
       <Sidebar />
+      <Navbar theme={theme} openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} />
       <Routes>
         <Route path='/' element={<Home openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} user={user} name={name} surname={surname} setName={setName} setSurname={setSurname} setTheme={setTheme} theme={theme} saveInfo={saveInfo} />} />
         <Route path='/kurslar' element={<About user={user} />} />
