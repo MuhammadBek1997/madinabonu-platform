@@ -1,0 +1,26 @@
+.course-list{
+    display: grid;
+    grid-template-columns: repeat(3 ,auto);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+
+
+
+.course-card{
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.39);
+}
+
+.pictures{
+    width: 400px;
+    height: 210px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}

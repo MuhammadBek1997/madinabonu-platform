@@ -124,8 +124,52 @@ function App() {
       students:"Fitfilyonta",
       AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
     },
+    {
+      img:"/images/rasm.png",
+      name: "Teacher Name",
+      subject:"Subject Name",
+      courses:"Course Duration (12soat)",
+      achievements:"Not yet",    
+      GroupPhotos:"Not yet",
+      WorkExperience:"100yil",
+      students:"Fitfilyonta",
+      AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
+    },
+    {
+      img:"/images/rasm.png",
+      name: "Teacher Name",
+      subject:"Subject Name",
+      courses:"Course Duration (12soat)",
+      achievements:"Not yet",    
+      GroupPhotos:"Not yet",
+      WorkExperience:"100yil",
+      students:"Fitfilyonta",
+      AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
+    },
+    {
+      img:"/images/rasm.png",
+      name: "Teacher Name",
+      subject:"Subject Name",
+      courses:"Course Duration (12soat)",
+      achievements:"Not yet",    
+      GroupPhotos:"Not yet",
+      WorkExperience:"100yil",
+      students:"Fitfilyonta",
+      AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
+    },
+    {
+      img:"/images/rasm.png",
+      name: "Teacher Name",
+      subject:"Subject Name",
+      courses:"Course Duration (12soat)",
+      achievements:"Not yet",    
+      GroupPhotos:"Not yet",
+      WorkExperience:"100yil",
+      students:"Fitfilyonta",
+      AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
+    }
     
-    
+  
   ];
 
   document.getElementById("root").parentElement.setAttribute("data-theme",theme)
@@ -136,7 +180,7 @@ function App() {
       <Navbar theme={theme} openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} />
       <Routes>
         <Route path='/' element={<Home openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} user={user} name={name} surname={surname} setName={setName} setSurname={setSurname} setTheme={setTheme} theme={theme} saveInfo={saveInfo} />} />
-        <Route path='/teachers' element={<Teachers name={name} subject={subject} achievements={achievements}  courses={courses} user={user} />} />
+        <Route path='/teachers' element={<Teachers   courses={courses} />} />
         <Route path='/topStudents' element={<TopStudents />} />
       </Routes>
     </div>
