@@ -5,13 +5,24 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import { useEffect, useState } from 'react'
+import LoginModal from './components/LoginModal'
 
 function App() {
 
   const [name, setName] = useState('')
   const [surname, setSurname] = useState('')
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")) || {})
+  const [login,setLogin] = useState(false)
 
+
+  const handleLogin = (username,password)=>{
+    localStorage.setItem("user",JSON.stringify({username:username,password:password}))
+    setLogin(false)
+  }
+
+  const handleLogout = ()=>{
+    localStorage.removeItem("log")
+  }
 
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem("theme") || "light"
@@ -31,7 +42,8 @@ function App() {
   useEffect(() => {
     localStorage.setItem("user", JSON.stringify(user))
     localStorage.setItem("theme", theme)
-  }, [theme,user])
+    localStorage.setItem("log",true)
+  }, [theme,user,login])
 
 
   let courses = [
@@ -70,7 +82,8 @@ function App() {
 
   return (
     <div id={theme} className='body'>
-      <Sidebar />
+      {login ? <LoginModal handleLogin={handleLogin}/> : null}
+      <Sidebar setLogin={setLogin} />
       <Routes>
         <Route path='/' element={<Home courses={courses} openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} user={user} name={name} surname={surname} setName={setName} setSurname={setSurname} setTheme={setTheme} theme={theme} saveInfo={saveInfo} />} />
         <Route path='/about' element={<About user={user} />} />
