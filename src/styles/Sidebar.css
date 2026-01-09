@@ -8,7 +8,9 @@
     top: 1%;
     border-radius: 0.4rem;
 }
-
+.sidebar-open{
+    width: 5vw;
+}
 
 .saidbarBtn-word{
     display: flex;
@@ -85,8 +87,9 @@
         top: 1%;
         border-radius: 0.4rem;
         display: none;
+        transform: translate(0);
     }
-
+    
     .tag{
         color: grey;
         display: none;

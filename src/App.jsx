@@ -184,10 +184,8 @@ function App() {
 
   return (
     <div id={theme} className='body'>
-      <Sidebar />
-      <section style={{
-        paddingLeft:sToggle ? "50px":"250px"
-      }}>
+      <Sidebar setsToggle={setsToggle} sToggle={sToggle}/>
+      <section >
 
       <Navbar theme={theme} openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} />
       <Routes>
