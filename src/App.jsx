@@ -13,6 +13,7 @@ function App() {
   const [name, setName] = useState('')
   const [surname, setSurname] = useState('')
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")) || {})
+  const [sToggle, setsToggle] = useState('')
 
 
   const [theme, setTheme] = useState(() => {
@@ -184,12 +185,17 @@ function App() {
   return (
     <div id={theme} className='body'>
       <Sidebar />
+      <section style={{
+        paddingLeft:sToggle ? "50px":"250px"
+      }}>
+
       <Navbar theme={theme} openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} />
       <Routes>
         <Route path='/' element={<Home openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} user={user} name={name} surname={surname} setName={setName} setSurname={setSurname} setTheme={setTheme} theme={theme} saveInfo={saveInfo} />} />
         <Route path='/teachers' element={<Teachers   courses={courses} />} />
         <Route path='/topStudents' element={<TopStudents />} />
       </Routes>
+      </section>
     </div>
   )
 }

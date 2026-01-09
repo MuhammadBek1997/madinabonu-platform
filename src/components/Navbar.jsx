@@ -1,14 +1,13 @@
 import React from 'react'
 import '../styles/Navbar.css'
+import { Atom, BrainCircuit, Lightbulb } from 'lucide-react';
 // App css import qilingan
 
-const Navbar = ( {user,theme,openTheme,setOpenTheme,handleChangeTheme}) => {
+const Navbar = ({ user, theme, openTheme, setOpenTheme, handleChangeTheme, setsToggle }) => {
   return (
     <div className='navbar'>
       <div className="word-logo">
-        <div className="nav-logo">
           <img src="/images/saveb.png" alt="logo" id='logotip' />
-        </div>
         Madinabonu
       </div>
       <div className='nav-btns'>
@@ -22,7 +21,7 @@ const Navbar = ( {user,theme,openTheme,setOpenTheme,handleChangeTheme}) => {
           display: openTheme ? "flex" : "none"
         }}>
           <button onClick={() => handleChangeTheme("dark")}>
-          ☀️Light
+            ☀️Light
           </button>
           <button onClick={() => handleChangeTheme("light")}>
             🌙 Dark
@@ -30,8 +29,18 @@ const Navbar = ( {user,theme,openTheme,setOpenTheme,handleChangeTheme}) => {
         </div>
         {/* end of theme menu */}
 
+
+
+       
+
+
       </div>
+
+
+
     </div>
+
+  
   )
 }
 

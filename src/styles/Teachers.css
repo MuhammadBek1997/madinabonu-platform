@@ -13,7 +13,7 @@
 .course-card{
     width: 400px;
     height: 300px;
-    border-radius: 15px;
+    border-radius: 0.4rem;
     background-color: var(--bg);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.39);
 }
@@ -35,16 +35,6 @@
     
 }
 
-@media (max-width:500px)  {
-    .course-list{
-        display: grid;
-        grid-template-columns: repeat(1 ,auto);
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-    } 
-}
-   
 @media (max-width:850px)  {
     .course-list{
         display: grid;
@@ -56,7 +46,7 @@
     .course-card{
         width: 350px;
         height: 300px;
-        border-radius: 15px;
+        border-radius: 0.4rem;
         background-color: var(--bg);
         box-shadow: 0 0 25px rgba(0, 0, 0, 0.39);
     }
@@ -64,10 +54,36 @@
     .pictures{
         width: 350px;
         height: 210px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+        border-top-left-radius: 0.4rem;
+        border-top-right-radius: 0.4rem;               
         
     }
     
 }
+@media (max-width:500px)  {
+    .course-list{
+        display: grid;
+        grid-template-columns: repeat( 1,auto);
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    } 
+
+    .course-card{
+        width: 400px;
+        height: 300px;
+        border-radius: 0.4rem;
+        background-color: var(--bg);
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.39);
+    }
+
+    .pictures{
+        width: 400px;
+        height: 210px;
+        border-top-left-radius: 0.4rem;
+        border-top-right-radius: 0.4rem;
+        
+    }
+}
+   
    

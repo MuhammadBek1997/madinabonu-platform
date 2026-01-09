@@ -6,23 +6,30 @@ import { Home, User, Settings, Save } from 'lucide-react'
 const Sidebar = () => {
   return (
     <div className='sidebar'>
-      <h3 className='tag'>
-        Sahifalar
-      </h3>
+      <div className="saidbarBtn-word" >
+        <h3 className='tag'>
+          Sahifalar
+        </h3>
+        {/* saidbar toggle */}
+        <button onClick={() => setsToggle(!openTheme)}>
+          Saidbar
+        </button>
+      </div>
+
       <div className='menus'>
         <Link to={'/'} className='menu'>
-           Bosh sahifa 🏠
+          Bosh sahifa 🏠
         </Link>
         <Link to={'/teachers'} className='menu'>
-        Kurslar 👩‍💻
+          Kurslar 👩‍💻
         </Link>
         <Link to={'/teachers'} className='menu'>
-        Teachers 👩🏻‍🏫
+          Teachers 👩🏻‍🏫
         </Link>
         <Link to={'/topStudents'} className='menu'>
-           Students 👨🏻‍🎓
+          Students 👨🏻‍🎓
         </Link>
-        </div>
+      </div>
     </div>
   )
 }

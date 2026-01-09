@@ -10,6 +10,12 @@
 }
 
 
+.saidbarBtn-word{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 
 .menus {
     padding-top: 1.5rem;
@@ -35,13 +41,56 @@
 
 
 @media (max-width: 850px) {
+    .sidebar {
+        width: 3vw;
+        height: 100vh;
+        position: fixed;
+        background-color: var(--bg);
+        border: 1px solid var(--border-cont);
+        padding: 1rem;
+        top: 1%;
+        border-radius: 0.4rem;
+    }
 
-    
+    .menu {
+        display: none;
+        justify-content: start;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 20px;
+        padding: 0.4rem;
+        text-decoration: none;
+        color: var(--text-cont);
+    }
 
+    .menus {
+        padding-top: 1.5rem;
+      
+    }
+    .tag{
+        color: grey;
+        display: none;
+    }
 }
 
 
 @media (max-width:500px) {
+    .sidebar {
+        width: 11.5vw;
+        height: 100vh;
+        position: fixed;
+        background-color: var(--bg);
+        border: 1px solid var(--border-cont);
+        padding: 1rem;
+        top: 1%;
+        border-radius: 0.4rem;
+        display: none;
+    }
 
+    .tag{
+        color: grey;
+        display: none;
+    }
+    
 }
 
