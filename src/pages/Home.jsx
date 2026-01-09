@@ -11,6 +11,7 @@ const Home = () => {
             Madinabonu - online kurslari
           </h1>
           <p>
+
             Madinabonu — bu sizga fanlarni o‘rganishda yordam beradigan platforma.
             Pullik darslardagi ma’lumotlarni bepul o‘rganing. Barchasi bir joyda!
           </p>

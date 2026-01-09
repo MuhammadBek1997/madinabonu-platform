@@ -19,11 +19,14 @@ function App() {
     return localStorage.getItem("theme") || "light"
   })
 
+
+  // darkmode button bosilganda chiqadigan pastgi menyu uchun yozilgan
   const [openTheme,setOpenTheme] = useState(false)
   const handleChangeTheme = (T) =>{
     setTheme(T)
     setOpenTheme(false)
   }
+  // tugadi
 
 
   const saveInfo = () => {
@@ -40,10 +43,10 @@ function App() {
       img:"/images/rasm.png",
       name: "Teacher Name",
       subject:"Subject Name",
+      WorkExperience:"100yil",
       courses:"Course Duration (12soat)",
       achievements:"Not yet",    
       GroupPhotos:"Not yet",
-      WorkExperience:"100yil",
       students:"Fitfilyonta",
       AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
     },
@@ -171,6 +174,10 @@ function App() {
     
   
   ];
+
+
+  
+
 
   document.getElementById("root").parentElement.setAttribute("data-theme",theme)
 

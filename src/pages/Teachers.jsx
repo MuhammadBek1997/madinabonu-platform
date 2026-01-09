@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/Teachers.css'
 
 const Teachers = ({ courses }) => {
+    const [cardToggle,setCardToggle] = useState(false)
     return (
 
         <section className='course-list'>
@@ -9,17 +10,29 @@ const Teachers = ({ courses }) => {
                 courses.map((item, index) => {
                     return (
                         <div className='course-card' key={index}>
-                            <div className="title-and-img">
-                                <img className='pictures' src={item.img} alt={item.name} />
-                                <h2>
-                                    {item.subject}
-                                </h2>
-                                <h1>
-                                    {item.name}
-                                </h1>
-                            </div>
-                            <div className="hover-state">
+                            <img className='pictures' src={item.img} alt={item.name} />
+                            <div className="title-and-btn">
+                                <div className="words">
+                                    <h2>
+                                        {item.subject}
+                                    </h2>
+                                    <h1>
+                                        {item.name}
+                                    </h1>
+                                </div>
+                                <button onClick={() => setCardToggle(!cardToggle)}>
 
+                                </button>
+                            </div>
+
+                            <div className="hover-state"
+>
+                                <h2>
+                                    {item.WorkExperience}
+                                </h2>
+                                <button>
+
+                                </button>
                             </div>
                         </div>
                     )
