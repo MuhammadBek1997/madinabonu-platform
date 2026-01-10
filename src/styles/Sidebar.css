@@ -44,18 +44,21 @@
 
 @media (max-width: 850px) {
     .sidebar {
-        width: 3vw;
+        width: 210px;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         background-color: var(--bg);
         border: 1px solid var(--border-cont);
-        padding: 1rem;
+        padding-top: 100px;
         top: 1%;
         border-radius: 0.4rem;
+        transform: translateX(0);
+        transition: 500ms;
     }
-
+    .sidebar-open{
+        width: 50px;
+    }
     .menu {
-        display: none;
         justify-content: start;
         align-items: center;
         gap: 0.5rem;
@@ -73,27 +76,38 @@
         color: grey;
         display: none;
     }
+    .saidbarBtn{
+        display: none;
+    }
 }
 
 
 @media (max-width:500px) {
     .sidebar {
-        width: 11.5vw;
+        width: 210px;
         height: 100vh;
         position: fixed;
         background-color: var(--bg);
         border: 1px solid var(--border-cont);
-        padding: 1rem;
+        padding-top: 100px;
         top: 1%;
         border-radius: 0.4rem;
-        display: none;
-        transform: translate(0);
+        transform: translateX(0);
+        transition: 500ms;
     }
     
+    .sidebar-open{
+        transform:translateX(-100%) ;
+    }
     .tag{
         color: grey;
         display: none;
     }
-    
+    section{
+        padding-left: 0;
+    }
+    .saidbarBtn{
+        display: none;
+    }
 }
 

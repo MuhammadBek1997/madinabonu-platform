@@ -9,7 +9,7 @@ const Navbar = ({ user, theme, openTheme, setOpenTheme, handleChangeTheme, setsT
       <div className="word-logo">
       
       {/* saidbarni ochuvchi btn  */}
-      <button onClick={() => setsToggle(!sToggle)}>
+      <button className='saidbar-btn' onClick={() => setsToggle(!sToggle)}>
           
       {!sToggle ? <ChevronLeft/>:<ChevronRight/>}
     </button>

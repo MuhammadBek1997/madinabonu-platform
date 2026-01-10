@@ -81,11 +81,8 @@ section{
 
 @media (max-width:500px) {
   section{
-    padding-top: 3rem;
-    /* padding-left: 1vw !important; */
-    /* display: flex;
-    justify-content: center;
-   */
+    padding-top: 4rem;
+   
   }
    
 }

@@ -9,17 +9,17 @@ const Sidebar = ({setsToggle,sToggle}) => {
       <div className="saidbarBtn-word" >
         <h3 className='tag'>
         {sToggle ? "":"  Sahifalar "}
-       
+        
         </h3>
         {/* saidbar toggle */}
-        <button onClick={() => setsToggle(!sToggle)}>
+        <button className='saidbarBtn'  onClick={() => setsToggle(!sToggle)}>
           
           {!sToggle ? <ChevronLeft/>:<ChevronRight/>}
         </button>
       </div>
 
       <div className='menus'>
-        <Link to={'/'} className='menu'>
+        <Link to={'/'} className='menu '>
          {sToggle ? "":" Bosh sahifa "}🏠
         </Link>
         <Link to={'/teachers'} className='menu'>
