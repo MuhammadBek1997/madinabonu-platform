@@ -47,8 +47,11 @@ body {
 }
 
 section{
-  padding-top: 6.7rem;
-  padding-left: 15vw !important;
+  padding-top: 3rem;
+  /* padding-left: 6vw !important; */
+  display: flex;
+  justify-content: center;
+
 }
 
 
@@ -76,3 +79,13 @@ section{
   padding-top:10vw ;
 }
 
+@media (max-width:500px) {
+  section{
+    padding-top: 3rem;
+    /* padding-left: 1vw !important; */
+    /* display: flex;
+    justify-content: center;
+   */
+  }
+   
+}

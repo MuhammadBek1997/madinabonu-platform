@@ -4,6 +4,8 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    margin-left: 15vw;
+
 }
 
 
@@ -30,13 +32,13 @@
 .pictures{
     width: 400px;
     height: 210px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
     
 }
 
 @media (max-width:850px)  {
-    .course-list{
+    .courses-card{
         display: grid;
         grid-template-columns: repeat(2,auto);
         justify-content: center;

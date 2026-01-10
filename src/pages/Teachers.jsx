@@ -5,10 +5,11 @@ const Teachers = ({ courses }) => {
     const [cardToggle,setCardToggle] = useState(false)
     return (
 
-        <div className='course-list'>
+        <section className='course-list'>
             {
                 courses.map((item, index) => {
                     return (
+                        <div className="courses-card">
                         <div className='course-card' key={index}>
                             <img className='pictures' src={item.img} alt={item.name} />
                             <div className="title-and-btn">
@@ -34,10 +35,11 @@ const Teachers = ({ courses }) => {
                                 </button>
                             </div> */}
                         </div>
+                        </div>
                     )
                 })
             }
-        </div>
+        </section>
 
 
     )

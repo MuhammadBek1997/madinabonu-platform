@@ -8,7 +8,8 @@ const Sidebar = ({setsToggle,sToggle}) => {
     <div className={`sidebar ${sToggle ? "sidebar-open":""}`}>
       <div className="saidbarBtn-word" >
         <h3 className='tag'>
-          Sahifalar
+        {sToggle ? "":"  Sahifalar "}
+       
         </h3>
         {/* saidbar toggle */}
         <button onClick={() => setsToggle(!sToggle)}>
@@ -22,13 +23,13 @@ const Sidebar = ({setsToggle,sToggle}) => {
          {sToggle ? "":" Bosh sahifa "}🏠
         </Link>
         <Link to={'/teachers'} className='menu'>
-          Kurslar 👩‍💻
+        {sToggle ? "":" Kurslar "} 👩‍💻
         </Link>
         <Link to={'/teachers'} className='menu'>
-          Teachers 👩🏻‍🏫
+        {sToggle ? "":" O'qituvchilar "}👩🏻‍🏫
         </Link>
         <Link to={'/topStudents'} className='menu'>
-          Students 👨🏻‍🎓
+        {sToggle ? "":" Top o'quvchilar "}👨🏻‍🎓
         </Link>
       </div>
     </div>

@@ -1,12 +1,21 @@
 import React from 'react'
 import '../styles/Navbar.css'
-import { Atom, BrainCircuit, Lightbulb } from 'lucide-react';
+import { Atom, BrainCircuit, Lightbulb,ChevronLeft, ChevronRight  } from 'lucide-react';
 // App css import qilingan
 
-const Navbar = ({ user, theme, openTheme, setOpenTheme, handleChangeTheme, setsToggle }) => {
+const Navbar = ({ user, theme, openTheme, setOpenTheme, handleChangeTheme, setsToggle,sToggle }) => {
   return (
     <div className='navbar'>
       <div className="word-logo">
+      
+      {/* saidbarni ochuvchi btn  */}
+      <button onClick={() => setsToggle(!sToggle)}>
+          
+      {!sToggle ? <ChevronLeft/>:<ChevronRight/>}
+    </button>
+
+
+  {/*navbardagilogo va mmadinabonu yozuvi   */}
           <img src="/images/saveb.png" alt="logo" id='logotip' />
         Madinabonu
       </div>

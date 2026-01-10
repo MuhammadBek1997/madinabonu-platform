@@ -9,7 +9,7 @@
     border-radius: 0.4rem;
 }
 .sidebar-open{
-    width: 5vw;
+    width: 2vw;
 }
 
 .saidbarBtn-word{
@@ -46,7 +46,7 @@
     .sidebar {
         width: 3vw;
         height: 100vh;
-        position: fixed;
+        position: absolute;
         background-color: var(--bg);
         border: 1px solid var(--border-cont);
         padding: 1rem;

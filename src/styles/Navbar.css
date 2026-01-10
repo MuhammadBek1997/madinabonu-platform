@@ -1,18 +1,16 @@
 .navbar {
     position: fixed;
-    width: 84%;
-    height: fit-content;
+    width: 83vw;
+    height: 3rem;
     background-color: var(--bg);
     border: 1px solid var(--border-cont);
     padding: 1rem;
     border-radius: 0.4rem;
     font-weight: bolder;
-
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
-
     top: 1%;
     left: 14%;
     font-size: 35px;
@@ -90,7 +88,7 @@
   @media (max-width:500px) {
     .navbar {
         position: fixed;
-        width: 84%;
+        /* width: 84%; */
         height: fit-content;
         background-color: var(--bg);
         border: 1px solid var(--border-cont);
