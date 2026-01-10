@@ -48,12 +48,12 @@ body {
 
 section{
   padding-top: 3rem;
-  /* padding-left: 6vw !important; */
   display: flex;
   justify-content: center;
-
 }
-
+.section-open{
+  padding-left: 0;
+}
 
 
 .theme-menu{

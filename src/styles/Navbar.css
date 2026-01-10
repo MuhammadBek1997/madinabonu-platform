@@ -24,6 +24,10 @@
     gap: 20px;
 }
 
+.section-open .navbar{
+    width: 93%;
+    left: 5%;
+}
 
 .saidbar-btn{
     display: none;
@@ -87,6 +91,8 @@
     }
     .saidbar-btn{
         display: inline;
+        background-color: var(--bg);
+        
     }
   }
   

@@ -185,7 +185,7 @@ function App() {
   return (
     <div id={theme} className='body'>
       <Sidebar setsToggle={setsToggle} sToggle={sToggle}/>
-      <section >
+      <section className={sToggle ? "section-open" : ""} >
 
       <Navbar theme={theme} openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} setsToggle={setsToggle} sToggle={sToggle} />
       <Routes>

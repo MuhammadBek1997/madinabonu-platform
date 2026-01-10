@@ -38,7 +38,10 @@
 .tag{
     color: grey;
 }
+.saidbarBtn{
+    background-color: var(--bg);
 
+}
 
 
 
@@ -103,9 +106,7 @@
         color: grey;
         display: none;
     }
-    section{
-        padding-left: 0;
-    }
+    
     .saidbarBtn{
         display: none;
     }
