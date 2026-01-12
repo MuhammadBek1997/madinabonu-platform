@@ -1,27 +1,57 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Footer from './components/Footer'
-import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import Home from './pages/Home'
-import About from './pages/About'
-import Contact from './pages/Contact'
 
+import { useEffect, useState } from 'react'
+import Courses from './pages/Courses'
+import Navbar from './components/Navbar'
+import Teachers from './pages/Teachers'
+import TopStudents from './pages/TopStudents'
 function App() {
   
+  const [name, setName] = useState('')
+  const [surname, setSurname] = useState('')
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")) || {})
+
+
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "light"
+  })
+
+  const [openTheme,setOpenTheme] = useState(false)
+  const handleChangeTheme = (T) =>{
+    setTheme(T)
+    setOpenTheme(false)
+  }
+
+
+  const saveInfo = () => {
+    setUser({ name: name, surname: surname })
+  }
+  
+  useEffect(() => {
+    localStorage.setItem("user", JSON.stringify(user))
+    localStorage.setItem("theme", theme)
+  }, [theme,user])
+
+
+  document.getElementById("root").parentElement.setAttribute("data-theme",theme)
+
   return (
-    <>
-      <Sidebar/>
-      <div>
-        <Navbar/>
-        <Routes>
-        <Route path='/' element={ <Home/> } />
-        <Route path='/about' element={ <About/> }/>
-        <Route path='/contact' element={ <Contact/> }/>
+  
+        <div id={theme} className='body'>
+      <Sidebar />
+      <Navbar theme={theme} openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} />
+      <Routes>
+        <Route path='/' element={<Home openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} user={user} name={name} surname={surname} setName={setName} setSurname={setSurname} setTheme={setTheme} theme={theme} saveInfo={saveInfo} />} />
+        <Route path='/courses' element={<Courses />} />
+        <Route path='/teachers' element={<Teachers user={user} />} />
+        <Route path='/topStudents' element={<TopStudents />} />
       </Routes>
-      </div>
+    </div>
       
-    </>
+    
   )
 }
 
