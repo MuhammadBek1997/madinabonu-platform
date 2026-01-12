@@ -51,6 +51,8 @@ section{
   display: flex;
   justify-content: center;
 }
+
+
 .section-open{
   padding-left: 0;
 }

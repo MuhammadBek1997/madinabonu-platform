@@ -1,40 +1,40 @@
 import React, { useState } from 'react'
 import '../styles/Teachers.css'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const Teachers = ({ courses }) => {
-    const [cardToggle,setCardToggle] = useState(false)
+    const [cardToggle, setCardToggle] = useState(false)
     return (
 
         <section className='course-list'>
             {
                 courses.map((item, index) => {
                     return (
-                        <div className="courses-card">
-                        <div className='course-card' key={index}>
-                            <img className='pictures' src={item.img} alt={item.name} />
-                            <div className="title-and-btn">
-                                <div className="words">
-                                    <h2>
-                                        {item.subject}
-                                    </h2>
-                                    <h1>
-                                        {item.name}
-                                    </h1>
+                        <div className='courses-card' >
+                            <div className={`course-card ${cardToggle ? "card-open" : ""}`} key={index}>
+                                <img className='pictures' src={item.img} alt={item.name} />
+                                <div className="title-and-btn">
+                                    <div className="words">
+                                        <h2>
+                                            {item.subject}
+                                        </h2>
+                                        <h1>
+                                            {item.name}
+                                        </h1>
+                                    </div>
+                                    <button className='cardBtn' onClick={() => setCardToggle(!cardToggle)}>
+
+                                        {!cardToggle ? <ChevronRight /> : <ChevronLeft />}
+                                    </button>
                                 </div>
-                                <button onClick={() => setCardToggle(!cardToggle)}>
+                                <div className="hover-state">
+                                {/* {sToggle ? "":"  "}🏠 */}
+                                   
+                                    <button>
 
-                                </button>
+                                    </button>
+                                </div>
                             </div>
-
-                            {/* <div className="hover-state">
-                                <h2>
-                                    {item.WorkExperience}
-                                </h2>
-                                <button>
-
-                                </button>
-                            </div> */}
-                        </div>
                         </div>
                     )
                 })
