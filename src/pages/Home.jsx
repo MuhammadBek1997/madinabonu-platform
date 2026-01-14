@@ -1,7 +1,8 @@
 import { Save } from 'lucide-react'
+import CourseCard from '../components/CourseCard'
 
 const Home = ({theme,openTheme,setOpenTheme,handleChangeTheme,courses}) => {
-    
+
   return (
     <div>
         <div>
@@ -24,16 +25,7 @@ const Home = ({theme,openTheme,setOpenTheme,handleChangeTheme,courses}) => {
         <div className='course-list'>
             {
                 courses.map((item,index)=>{
-                    return(
-                        <div className='course-card' key={index}>
-                            <h2>
-                                {item.name}
-                            </h2>
-                            <h1>
-                                {item.teacher}
-                            </h1>
-                        </div>
-                    )
+                    return <CourseCard index={index} {...item}/>
                 })
             }
         </div>
