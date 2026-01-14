@@ -4,21 +4,20 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import CoursesCard from '../components/CoursesCard'
 
 const Teachers = ({ courses }) => {
-    const [cardToggle, setCardToggle] = useState(false)
-    return (
-
+  
+ 
+    return(
         <section className='course-list'>
             {
                 courses.map((item, index) => {
-                    return (
-                       <CoursesCard index={index} {...item} />
-                    )
+                    return <CoursesCard key={index} {...item} />
                 })
             }
         </section>
+            )
 
 
-    )
+    
 }
 
 export default Teachers
