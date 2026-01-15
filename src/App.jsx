@@ -226,8 +226,8 @@ function App() {
       <Navbar theme={theme} openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} setsToggle={setsToggle} sToggle={sToggle} />
       <Routes>
         <Route path='/' element={<Home openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} user={user} name={name} surname={surname} setName={setName} setSurname={setSurname} setTheme={setTheme} theme={theme} saveInfo={saveInfo} />} />
-        <Route path='/teachers' element={<Teachers   courses={courses} />} />
-        <Route path='/topStudents' element={<TopStudents />} />
+        <Route path='/teachers' element={<Teachers    courses={courses} />} />
+        <Route path='/topStudents' element={<TopStudents courses={courses}  />} />
       </Routes>
       </section>
     </div>

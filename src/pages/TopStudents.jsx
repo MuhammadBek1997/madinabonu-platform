@@ -1,7 +1,8 @@
 import React from 'react'
 import '../styles/Students.css'
+import StudentCard from '../components/StudentCard'
 
-const TopStudents = () => {
+const TopStudents = ({courses}) => {
   return (
     <section className='course-list'>
     {

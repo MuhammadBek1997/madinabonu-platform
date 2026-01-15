@@ -1,5 +1,6 @@
 
-import React from 'react'
+import { ChevronDown, ChevronUp } from 'lucide-react'
+import React, { useState } from 'react'
 
 const StudentCard = () => {
     const [cardButton, setCardButton] = useState(false)
@@ -10,7 +11,7 @@ const StudentCard = () => {
             <div className={`students-card-cont ${cardButton ? "card-open" : ""}`} >
              
             <button className='cardBtn' onClick={() => setCardButton(!cardButton)}>
-                        {!cardToggle ? <ChevronDown /> : <ChevronUp />}
+                        {!cardButton ? <ChevronDown /> : <ChevronUp />}
                     </button>
 
             </div>
