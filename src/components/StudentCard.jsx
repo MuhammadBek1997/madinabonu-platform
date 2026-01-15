@@ -7,15 +7,25 @@ const StudentCard = () => {
 
     return (
         <div>
-  <div className={'students-card'} style={{zIndex:cardButton?"10" : ""}}>
-            <div className={`students-card-cont ${cardButton ? "card-open" : ""}`} >
-             
-            <button className='cardBtn' onClick={() => setCardButton(!cardButton)}>
+            <div className={'students-card'} style={{ zIndex: cardButton ? "10" : "" }}>
+                <div className={`students-card-cont ${cardButton ? "card-open" : ""}`} >
+                    <div className="card">
+                        <div className='face front'>
+                            <h2>
+                                Front
+                            </h2>
+                        </div>
+                        <div className='face back'>
+                            <h2>
+                                Back
+                            </h2>
+                        </div>
+                    </div>
+                    {/* <button className='cardBtn' onClick={() => setCardButton(!cardButton)}>
                         {!cardButton ? <ChevronDown /> : <ChevronUp />}
-                    </button>
-
+                    </button> */}
+                </div>
             </div>
-        </div>
         </div>
     )
 }
