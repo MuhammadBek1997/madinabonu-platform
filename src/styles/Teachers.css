@@ -11,7 +11,7 @@
 
 
 .course-card {
-    border: 1px solid;
+
     width: 400px;
     height: 300px;
     position: relative;
@@ -20,6 +20,53 @@
 }
 
 
+
+.cardBtn {
+
+    padding: 0.5rem;
+    border: none;
+    background: linear-gradient(45deg, #ff00cc, #3333ff);
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.cardBtn:hover {
+
+    transform: scale(1.05) translateY(-5px);
+    box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.2),
+    0 0 20px rgba(98, 0, 234, 0.7);
+    filter: brightness(1.1);
+
+}
+
+
+.dataToggle {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #8E2DE2, #4A00E0);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dataToggle:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 
+    0 5px 12px rgba(0, 0, 0, 0.15), 
+    0 0 10px rgba(142, 45, 226, 0.5);
+    filter: brightness(1.1);
+}
 
 .course-card-cont {
     width: 400px;
@@ -33,22 +80,30 @@
     overflow: hidden;
 }
 
+.course-card-cont h2:first-child {
+    margin-top: 10px;
+}
 
 
-.course-card:hover {
-    z-index: 20; 
-  }
 
 .card-open {
-    height: 500px;
+    height: 800px;
+}
+
+h2 {
+    line-height: 2;
+}
+
+
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .title-and-btn {
     padding-left: 1rem;
     padding-right: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .pictures {

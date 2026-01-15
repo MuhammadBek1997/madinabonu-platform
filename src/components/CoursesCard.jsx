@@ -2,19 +2,19 @@ import React, { useState } from 'react'
 import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp } from 'lucide-react'
 
 
-const CoursesCard = ({ name, subject, img, courses,achievements,GroupPhotos,WorkExperience,students}) => {
+const CoursesCard = ({ name, subject, img, courses,achievements,GroupPhotos,WorkExperience,students,AboutTeacher}) => {
 
     const [cardToggle, setCardToggle] = useState(false)
 
     return (
-        <div className='course-card' >
+        <div className={'course-card'} style={{zIndex:cardToggle?"10" : ""}}>
             <div className={`course-card-cont ${cardToggle ? "card-open" : ""}`} >
                 <img className='pictures' src={img} alt={name} />
                 <div className="title-and-btn">
                     <div className="words">
-                        <h2>
+                        <h1>
                             {subject}
-                        </h2>
+                        </h1>
                         <h1>
                             {name}
                         </h1>
@@ -22,21 +22,41 @@ const CoursesCard = ({ name, subject, img, courses,achievements,GroupPhotos,Work
                     <button className='cardBtn' onClick={() => setCardToggle(!cardToggle)}>
                         {!cardToggle ? <ChevronDown /> : <ChevronUp />}
                     </button>
-                    <h3>
-                        {courses}
-                    </h3>
-                    <h3>
+                    <div className="data">
+                    <h2>
+                     {courses}
+                    </h2>
+                   
+                    </div>
+                    <div className="data">
+                    <h2>
                         {achievements}
-                    </h3>
-                    <h3>
+                    </h2>
+                    </div>
+                    <div className="data">
+                    <h2>
                         {GroupPhotos}
-                    </h3>
-                    <h3>
+                    </h2>
+                    </div>
+                    <div className="data">
+                    <h2>
                         {WorkExperience}
-                    </h3>
-                    <h3>
+                    </h2>
+                    
+                    </div>
+                    <div className="data">
+                    <h2>
                         {students}
-                    </h3>
+                    </h2>
+                    
+                    </div>
+                   <div className="data">
+                    <h4 >
+                        {AboutTeacher}
+                    </h4>
+                    
+                    </div>
+                    <button className='dataToggle'> Batafsil</button>
                 </div>
 
             </div>

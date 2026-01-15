@@ -1,10 +1,16 @@
 import React from 'react'
+import '../styles/Students.css'
 
 const TopStudents = () => {
   return (
-    <div>
-      
-    </div>
+    <section className='course-list'>
+    {
+        courses.map((item, index) => {
+            return <StudentCard key={index} {...item} />
+        })
+    }
+</section>
+   
   )
 }
 

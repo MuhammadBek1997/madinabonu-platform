@@ -7,7 +7,7 @@ const Home = () => {
     <section>
       <div className='hero'>
         <div className="for-words-btns">
-          <h1>
+          <h1 >
             Madinabonu - online kurslari
           </h1>
           <p>
