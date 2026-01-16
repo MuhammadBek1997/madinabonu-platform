@@ -5,9 +5,10 @@
     align-items: center;
     gap: 50px;
     margin-left: 15vw;
+    margin-top: 50px;
 
 }
-/*  
+/*   
 .course-card {
 
     width: 400px;
@@ -36,7 +37,7 @@
     0 0 20px rgba(98, 0, 234, 0.7);
     filter: brightness(1.1);
 
-}
+} */
 .dataToggle {
     width: 100%;
     padding: 0.5rem;
@@ -58,7 +59,7 @@
     0 0 10px rgba(142, 45, 226, 0.5);
     filter: brightness(1.1);
 }
-.course-card-cont {
+/* .course-card-cont {
     width: 400px;
     height: 300px;
     border-radius: 0.4rem;
@@ -74,7 +75,7 @@
 }
 .card-open {
     height: 800px;
-} */
+} */ 
 
 
 
@@ -101,23 +102,25 @@
     backface-visibility: hidden;
     transition: 2s ease-in-out;
     transform: perspective(500px) rotateY(0deg);
+    
 }
 
 .card .face.front 
 {
-    background: #ff04ff; ;
+    /* background:#1A1A2E; */
     color: red;
 }
 
 .card .face.back{
-    background:#3bc2ff;
+    /* background:#3bc2ff; */
     color: black;
     transform: perspective(500px) rotateY(180deg);
-
+    padding: 2rem;
+    
 }
 
 .card:hover .face.front
- {
+{
     transform: perspective(500px) rotateY(180deg);
 }
 
@@ -129,6 +132,7 @@
 
 .card .face.back h2
 {
+  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,6 +153,11 @@
 
 }
 
+
+.card .face.front .teacher-info{
+    position: absolute;
+    bottom: 0;
+}
 
 
 
@@ -172,10 +181,10 @@ h2 {
 }
 
 .pictures {
-    width: 400px;
-    height: 210px;
-    border-top-left-radius: 0.4rem;
-    border-top-right-radius: 0.4rem;
+    width: 80%;;
+    height: 70%;
+   border-radius: 0.4rem;
+    position: fixed;
 
 }
 

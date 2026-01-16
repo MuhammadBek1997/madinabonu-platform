@@ -2,7 +2,7 @@
     position: fixed;
     width: 83vw;
     height: 3rem;
-    background-color: var(--bg);
+    background: var(--bg);
     border: 1px solid var(--border-cont);
     padding: 1rem;
     border-radius: 0.4rem;
@@ -14,8 +14,8 @@
     left: 14%;
     font-size: 35px;
     z-index: 1000;
+    box-shadow: 0 0px 30px var(--shadow);
 }
-
 
 /* Nav-btns ichidagi elementlar ham yonma-yon turishi uchun */
 .nav-btns {

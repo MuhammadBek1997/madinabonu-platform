@@ -41,7 +41,7 @@ function App() {
 
   let courses = [
     {
-      img:"/images/rasm.png",
+      img:"/images/fotoTeacher.png",
       name: "Teacher Name",
       subject:"Subject Name",
       courses:"Kurs davomiyligi: 12soat",
@@ -53,7 +53,7 @@ function App() {
     },
 
     {
-      img:"/images/rasm.png",
+      img:"/images/davrbekU.png",
       name: "Teacher Name",
       subject:"Subject Name",
       courses:"Kurs davomiyligi: 12soat",
@@ -64,7 +64,7 @@ function App() {
       AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
     },
     {
-      img:"/images/rasm.png",
+      img:"/images/foto1.png",
       name: "Teacher Name",
       subject:"Subject Name",
       courses:"Kurs davomiyligi: 12soat",
@@ -75,7 +75,7 @@ function App() {
       AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
     },
     {
-      img:"/images/rasm.png",
+      img:"/images/foto2.png",
       name: "Teacher Name",
       subject:"Subject Name",
       courses:"Kurs davomiyligi: 12soat",
@@ -86,7 +86,7 @@ function App() {
       AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
     },
     {
-      img:"/images/rasm.png",
+      img:"/images/foto3.png",
       name: "Teacher Name",
       subject:"Subject Name",
       courses:"Kurs davomiyligi: 12soat",
@@ -97,7 +97,7 @@ function App() {
       AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
     },
     {
-      img:"/images/rasm.png",
+      img:"/images/foto4.png",
       name: "Teacher Name",
       subject:"Subject Name",
       courses:"Kurs davomiyligi: 12soat",
@@ -108,7 +108,7 @@ function App() {
       AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
     },
     {
-      img:"/images/rasm.png",
+      img:"/images/foto5.png",
       name: "Teacher Name",
       subject:"Subject Name",
       courses:"Kurs davomiyligi: 12soat",

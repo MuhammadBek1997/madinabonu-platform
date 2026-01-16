@@ -1,14 +1,12 @@
-.card 
-{
+.card {
     position: relative;
-    width: 300px;
+    width: 400px;
     height: 400px;
     transform-style: preserve-3d;
-    border-radius: 15px;
+
 }
 
-.card .face 
-{
+.card .face {
     position: absolute;
     top: 0;
     left: 0;
@@ -16,39 +14,65 @@
     height: 100%;
     transform-style: preserve-3d;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     backface-visibility: hidden;
     transition: 2s ease-in-out;
     transform: perspective(500px) rotateY(0deg);
+    border-radius: 15px;
+
 }
 
-.card .face.front 
-{
-    background:#ff0 ;
-    color: red;
+.card .face.front {
+/* 
+     backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(10px);  */
+
 }
 
-.card .face.back{
-    background:#3bc2ff;
-    color: black;
+.card .face.back {
+    color: white;
     transform: perspective(500px) rotateY(180deg);
+    text-align: start;
+    
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px); 
+
 
 }
 
-.card:hover .face.front
- {
+
+.full-info {
+
+    border-radius: 15px;
+
+}
+
+.card:hover .face.front {
     transform: perspective(500px) rotateY(180deg);
 }
 
-.card:hover .face.back
-{
+.card:hover .face.back {
     transform: perspective(500px) rotateY(360deg);
 }
 
+.card:hover .full-info {
 
-.card .face.back h2
-{
+    transform: perspective(500px) translateZ(20px);
+}
+
+
+.card .face.back h2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 20px;
+    text-transform: uppercase;
+    transform: perspective(500px) translateZ(50px);
+
+}
+
+.card .face .pictures {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,18 +81,3 @@
     transform: perspective(500px) translateZ(50px);
 
 }
-
-.card .face h4
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    text-transform: uppercase;
-    transform: perspective(500px) translateZ(50px);
-
-}
-
-
-
-

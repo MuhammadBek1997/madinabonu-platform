@@ -2,11 +2,14 @@
     width: 11.5vw;
     height: 100vh;
     position: fixed;
-    background-color: var(--bg);
+    background: var(--bg);
     border: 1px solid var(--border-cont);
     padding: 1rem;
     top: 1%;
-    border-radius: 0.4rem;
+    border-radius: 0.4rem; 
+    box-shadow: 0 0px 30px var(--shadow);
+  
+   
 }
 .sidebar-open{
     width: 2vw;
