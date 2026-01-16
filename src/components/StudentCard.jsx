@@ -2,13 +2,12 @@
 import { ChevronDown, ChevronUp } from 'lucide-react'
 import React, { useState } from 'react'
 
-const StudentCard = () => {
+const StudentCard = ({ courses, achievements, GroupPhotos, WorkExperience, students, AboutTeacher }) => {
     const [cardButton, setCardButton] = useState(false)
 
     return (
         <div>
-            <div className={'students-card'} style={{ zIndex: cardButton ? "10" : "" }}>
-                <div className={`students-card-cont ${cardButton ? "card-open" : ""}`} >
+          
                     <div className="card">
                         <div className='face front'>
                             <h2>
@@ -17,15 +16,26 @@ const StudentCard = () => {
                         </div>
                         <div className='face back'>
                             <h2>
-                                Back
+                                {courses}
                             </h2>
+                            <h2>
+                                {achievements}
+                            </h2>
+                            <h2>
+                                {GroupPhotos}
+                            </h2>
+                            <h2>
+                                {WorkExperience}
+                            </h2>
+                            <h2>
+                                {students}
+                            </h2>
+                            <h4 >
+                                {AboutTeacher}
+                            </h4>
                         </div>
                     </div>
-                    {/* <button className='cardBtn' onClick={() => setCardButton(!cardButton)}>
-                        {!cardButton ? <ChevronDown /> : <ChevronUp />}
-                    </button> */}
-                </div>
-            </div>
+                   
         </div>
     )
 }

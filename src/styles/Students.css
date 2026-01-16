@@ -4,6 +4,7 @@
     width: 300px;
     height: 400px;
     transform-style: preserve-3d;
+    border-radius: 15px;
 }
 
 .card .face 
@@ -18,7 +19,7 @@
     align-items: center;
     justify-content: center;
     backface-visibility: hidden;
-    transition: 500ms ease-in-out;
+    transition: 2s ease-in-out;
     transform: perspective(500px) rotateY(0deg);
 }
 
@@ -42,8 +43,32 @@
 
 .card:hover .face.back
 {
-    transform: perspective(500px) rotateY(0deg);
+    transform: perspective(500px) rotateY(360deg);
 }
+
+
+.card .face.back h2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    transform: perspective(500px) translateZ(50px);
+
+}
+
+.card .face h4
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    transform: perspective(500px) translateZ(50px);
+
+}
+
 
 
 
