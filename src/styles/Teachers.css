@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, auto);
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 60px;
     margin-left: 15vw;
     margin-top: 50px;
 
@@ -157,6 +157,7 @@
 .card .face.front .teacher-info{
     position: absolute;
     bottom: 0;
+    text-align: center;
 }
 
 

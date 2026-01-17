@@ -3,7 +3,7 @@
     width: 400px;
     height: 400px;
     transform-style: preserve-3d;
-
+    
 }
 
 .card .face {
@@ -20,30 +20,35 @@
     transition: 2s ease-in-out;
     transform: perspective(500px) rotateY(0deg);
     border-radius: 15px;
-
+    
 }
 
 .card .face.front {
-/* 
-     backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(10px);  */
-
+    background-color: rgba(209, 120, 231, 0.281);
+    backdrop-filter: blur(1px);               
+    -webkit-backdrop-filter: blur(1px);
+    color: white;
+    
+    
 }
 
 .card .face.back {
-    color: white;
+    color: aqua;
     transform: perspective(500px) rotateY(180deg);
     text-align: start;
+    background-color: rgba(125, 46, 145, 0.281);
+    backdrop-filter: blur(1px);               
+    -webkit-backdrop-filter: blur(1px);
+    border: 3px solid aqua;
     
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(10px); 
-
-
+    
+    
+    
 }
 
 
 .full-info {
-
+    
     border-radius: 15px;
 
 }
@@ -53,13 +58,9 @@
 }
 
 .card:hover .face.back {
-    transform: perspective(500px) rotateY(360deg);
+    transform: perspective(500px) rotateY(360deg) translate3d(-30px,-50px,0);
 }
 
-.card:hover .full-info {
-
-    transform: perspective(500px) translateZ(20px);
-}
 
 
 .card .face.back h2 {

@@ -42,8 +42,8 @@ function App() {
   let courses = [
     {
       img:"/images/fotoTeacher.png",
-      name: "Teacher Name",
-      subject:"Subject Name",
+      name: "Rahmonberdiev G'iyos",
+      subject:"Fizika",
       courses:"Kurs davomiyligi: 12soat",
       achievements:" Yutuqlar: Hali mavjud emas",    
       GroupPhotos:"Guruh rasmlar: Mavjud emas",
