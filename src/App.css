@@ -12,31 +12,40 @@
   --text1: #cec2c2f2;
   --text2: #E9033A;
   --bg:linear-gradient(180deg, #1e3a5f 0%, #111827 100%) ;
-  --bg-cont: #000000;
+  --bg-cont: #202020;
   --border: #363636;
   --text-cont: #cac7c7bf;
   --glass-bg: #000000BF;
   --border-cont:#333333;
   --text-cont1: #FFFFFF80;
   --bg-del: #0D0D0D;
+  --card-back: radial-gradient(circle,rgba(10, 46, 110, 1) 0%, rgba(101, 124, 164, 1) 0%, rgba(150, 166, 193, 1) 57%, rgba(168, 181, 204, 1) 65%, rgba(196, 205, 220, 1) 100%, rgba(255, 255, 255, 1) 100%);
+  --card-text:rgb(235, 219, 219);
   --shadow:rgba(16, 83, 95, 0.322);
+  --card-front:radial-gradient(circle,rgba(10, 46, 110, 1) 26%, rgba(255, 255, 255, 1) 170%);
+  --nav-said: #363636;
+ 
+
   
 }
 
 [data-theme="dark"] {
-  --text: rgb(43, 39, 39);
+  --text: #111827;
   --text1: #a3a0a0f2;
   --text2: #E9033A;
   --bg:linear-gradient(180deg, #F0E5EF 0%, #ffffff 100%);
-  --bg-cont: white;
+  --bg-cont: #ffffff;
   --border: #F0F0F0;
   --text-cont: #423e3ebf;
   --glass-bg: #000000BF;
   --border-cont: #CECECE;
   --text-cont1: #00000080;
   --bg-del:#fdfbfb;
+  --card-back:radial-gradient(circle,rgba(211, 196, 220, 1) 1%, rgba(220, 209, 228, 1) 23%, rgba(226, 217, 232, 1) 100%, rgba(255, 255, 255, 1) 100%);
+  --card-text:rgb(34, 31, 31);
   --shadow:rgba(128, 15, 103, 0.25);
-  --card-bg:linear-gradient(180deg, #7C2AE8 0%, #B983FF 45%, #FFFFFF 100%);
+  --card-front: radial-gradient(circle, rgba(125, 29, 130, 1) 0%, rgba(255, 255, 255, 1) 130%);
+  --nav-said:#DFDFDF;
 
 }
 

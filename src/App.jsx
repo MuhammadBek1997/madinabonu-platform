@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import Teachers from './pages/Teachers'
 import TopStudents from './pages/TopStudents'
+import SingleTeachers from './components/SingleTeachers'
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
 
   let courses = [
     {
+      id:1,
       img:"/images/fotoTeacher.png",
       name: "Rahmonberdiev G'iyos",
       subject:"Fizika",
@@ -53,6 +55,7 @@ function App() {
     },
 
     {
+      id:2,
       img:"/images/davrbekU.png",
       name: "Teacher Name",
       subject:"Subject Name",
@@ -64,6 +67,7 @@ function App() {
       AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
     },
     {
+      id:3,
       img:"/images/foto1.png",
       name: "Teacher Name",
       subject:"Subject Name",
@@ -119,7 +123,7 @@ function App() {
       AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
     },
     {
-      img:"/images/rasm.png",
+      img:"/images/rohila.png",
       name: "Teacher Name",
       subject:"Subject Name",
       courses:"Kurs davomiyligi: 12soat",
@@ -130,7 +134,7 @@ function App() {
       AboutTeacher:"Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
     },
     {
-      img:"/images/rasm.png",
+      img:"/images/otabek.png",
       name: "Teacher Name",
       subject:"Subject Name",
       courses:"Kurs davomiyligi: 12soat",
@@ -220,7 +224,7 @@ function App() {
 
   return (
     <div id={theme} className='body'>
-      <Sidebar setsToggle={setsToggle} sToggle={sToggle}/>
+      <Sidebar setsToggle={setsToggle} sToggle={sToggle} theme={theme}/>
       <section className={sToggle ? "section-open" : ""} >
 
       <Navbar theme={theme} openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} setsToggle={setsToggle} sToggle={sToggle} />
@@ -228,6 +232,7 @@ function App() {
         <Route path='/' element={<Home openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} user={user} name={name} surname={surname} setName={setName} setSurname={setSurname} setTheme={setTheme} theme={theme} saveInfo={saveInfo} />} />
         <Route path='/teachers' element={<Teachers    courses={courses} />} />
         <Route path='/topStudents' element={<TopStudents courses={courses}  />} />
+        <Route path='/teachersSingle/:id' element={<SingleTeachers/>} />
       </Routes>
       </section>
     </div>

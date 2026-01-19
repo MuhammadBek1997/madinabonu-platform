@@ -2,12 +2,11 @@
     width: 11.5vw;
     height: 100vh;
     position: fixed;
-    background: var(--bg);
-    border: 1px solid var(--border-cont);
+    background: var(--nav-said);
     padding: 1rem;
     top: 1%;
     border-radius: 0.4rem; 
-    box-shadow: 0 0px 30px var(--shadow);
+
   
    
 }
@@ -35,7 +34,7 @@
     font-size: 20px;
     padding: 0.4rem;
     text-decoration: none;
-    color: var(--text-cont);
+    color: var(--text);
 }
 
 .tag{
