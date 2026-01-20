@@ -6,6 +6,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import { useEffect, useState } from 'react'
 import LoginModal from './components/LoginModal'
+import SingleCourse from './components/SingleCourse'
 
 function App() {
 
@@ -48,30 +49,37 @@ function App() {
 
   let courses = [
     {
+      id:11,
       name:"Ingliz tili",
       teacher:"Akmalkhon"
     },
     {
+      id:12,
       name:"Ingliz tili",
       teacher:"Abdulaziz"
     },
     {
+      id:13,
       name:"Turk tili",
       teacher:"Charos"
     },
     {
+      id:14,
       name:"Turk tili",
       teacher:"Charos"
     },
     {
+      id:15,
       name:"Turk tili",
       teacher:"Charos"
     },
     {
+      id:16,
       name:"Turk tili",
       teacher:"Charos"
     },
     {
+      id:17,
       name:"Turk tili",
       teacher:"Charos"
     },
@@ -88,6 +96,7 @@ function App() {
         <Route path='/' element={<Home courses={courses} openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} user={user} name={name} surname={surname} setName={setName} setSurname={setSurname} setTheme={setTheme} theme={theme} saveInfo={saveInfo} />} />
         <Route path='/about' element={<About user={user} />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/course/:id' element={<SingleCourse courses={courses}/>} />
       </Routes>
     </div>
   )

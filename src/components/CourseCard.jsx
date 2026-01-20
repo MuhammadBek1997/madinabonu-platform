@@ -1,10 +1,11 @@
 import { ChevronDown, ChevronUp } from 'lucide-react'
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
-const CourseCard = ({ name, teacher, index }) => {
+const CourseCard = ({ name, teacher, index,id }) => {
     const [cardToggle, setCardToggle] = useState(false)
     return (
-        <div className={`course-card`} style={{zIndex:cardToggle?"10":""}} key={index}>
+        <div className={`course-card`} style={{zIndex:cardToggle?"10":""}}>
             <div className={`card-cont  ${cardToggle ? "card-open" : ""}`}>
                 <h2>
                     {name}
@@ -15,9 +16,12 @@ const CourseCard = ({ name, teacher, index }) => {
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vitae quos reprehenderit quam voluptate, tenetur facilis nobis esse repudiandae pariatur?
                 </p>
-                <button onClick={() => setCardToggle(!cardToggle)}>
+                <button className='toggleBtn' onClick={() => setCardToggle(!cardToggle)}>
                     {cardToggle ? <ChevronUp/> : <ChevronDown/>}
                 </button>
+                <Link to={`/course/${id}`}>
+                    Batafsil
+                </Link>
             </div>
         </div>
     )

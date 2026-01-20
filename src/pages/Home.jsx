@@ -25,7 +25,7 @@ const Home = ({theme,openTheme,setOpenTheme,handleChangeTheme,courses}) => {
         <div className='course-list'>
             {
                 courses.map((item,index)=>{
-                    return <CourseCard index={index} {...item}/>
+                    return <CourseCard key={item.id} {...item}/>
                 })
             }
         </div>

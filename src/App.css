@@ -57,13 +57,13 @@
 }
 .card-open{
   position: absolute;
-  height: 200px;
+  height: 220px;
   z-index: 10;
 }
 .card-cont p{
   margin-top: 40px;
 }
-.card-cont button{
+.toggleBtn{
   position: absolute;
   bottom: 0;
   right: 0;
