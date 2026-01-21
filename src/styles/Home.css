@@ -48,7 +48,7 @@
 }
 
 .btn{
-
+background-color: var(--nav-said);
 }
     
 @media (max-width: 850px) {

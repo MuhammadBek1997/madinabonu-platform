@@ -16,7 +16,8 @@ const Navbar = ({ user, theme, openTheme, setOpenTheme, handleChangeTheme, setsT
 
 
   {/*navbardagilogo va mmadinabonu yozuvi   */}
-          <img src="/images/logotip.png" alt="logo" id='logotip' />
+          {/* <img src="/images/logotip.png" alt="logo" id='logotip' /> */}
+          <img src={`/images/madinabonu${theme}.png`}alt="" id='logotip' />
         Madinabonu
       </div>
       <div className='nav-btns'>

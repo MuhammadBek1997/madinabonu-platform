@@ -9,9 +9,9 @@ const SingleTeachers = () => {
   console.log(teacherId.id)
   
     return (
-    <div>
+  <div style={{padding:"400px"}}>
       Single Teachers
-      <Link to={`/`}> Back </Link>
+      <Link to={`/teachers`}> Back </Link>
     </div>
   )
 }

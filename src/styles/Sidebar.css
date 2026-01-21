@@ -25,6 +25,10 @@
     padding-top: 1.5rem;
     
 }
+.sidebar-icon{
+    width: 30px;
+    height: 30px;
+}
 
 .menu {
     display: flex;

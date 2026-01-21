@@ -20,16 +20,17 @@ const Sidebar = ({setsToggle,sToggle,theme}) => {
 
       <div className='menus'>
         <Link to={'/'} className='menu '>
-         {sToggle ? "":" Bosh sahifa "} <Home/>
+        <Home/> {sToggle ? "":" Bosh sahifa "} 
         </Link>
         <Link to={'/teachers'} className='menu'>
-        {sToggle ? "":" Kurslar "} <GraduationCap/>
+        <GraduationCap/> {sToggle ? "":" Kurslar "} 
         </Link>
         <Link to={'/teachers'} className='menu'>
-        <img src={`/images/teacher${theme}.png`} alt="" /> {sToggle ? "":" O'qituvchilar "}
+        <img src={`/images/teach1${theme}.png`} alt="" className='sidebar-icon' /> 
+        {sToggle ? "":" O'qituvchilar "}
         </Link>
         <Link to={'/topStudents'} className='menu'>
-        {sToggle ? "":" Top o'quvchilar "}👨🏻‍🎓
+        <img src={`/images/bola${theme}.png`}alt="" className='sidebar-icon' /> {sToggle ? "":" Top o'quvchilar "}
         </Link>
       </div>
     </div>

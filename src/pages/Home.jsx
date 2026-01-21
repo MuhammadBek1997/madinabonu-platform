@@ -21,7 +21,7 @@ const Home = () => {
           </div>
         </div>
         <div className="nav-logo">
-        <img src="/images/logotip.png" alt="logo" className='img-hero' />
+     
       </div>
       </div>
     </section>
