@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../styles/Sidebar.css'
-import { Home, User, Settings, Save, ChevronLeft, ChevronRight, School, BookOpen, GraduationCap, UserCheck, Presentation } from 'lucide-react'
+import { Home,  ChevronLeft, ChevronRight, GraduationCap, } from 'lucide-react'
 
 const Sidebar = ({setsToggle,sToggle,theme}) => {
   return (
@@ -22,7 +22,7 @@ const Sidebar = ({setsToggle,sToggle,theme}) => {
         <Link to={'/'} className='menu '>
         <Home/> {sToggle ? "":" Bosh sahifa "} 
         </Link>
-        <Link to={'/teachers'} className='menu'>
+        <Link to={'/topStudents'} className='menu'>
         <GraduationCap/> {sToggle ? "":" Kurslar "} 
         </Link>
         <Link to={'/teachers'} className='menu'>

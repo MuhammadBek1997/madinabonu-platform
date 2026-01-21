@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Navbar.css'
-import { Atom, BrainCircuit, Lightbulb,ChevronLeft, ChevronRight  } from 'lucide-react';
+import { Atom, BrainCircuit, Lightbulb,ChevronLeft, ChevronRight, Sun, Moon  } from 'lucide-react';
 // App css import qilingan
 
 const Navbar = ({ user, theme, openTheme, setOpenTheme, handleChangeTheme, setsToggle,sToggle }) => {
@@ -21,22 +21,31 @@ const Navbar = ({ user, theme, openTheme, setOpenTheme, handleChangeTheme, setsT
         Madinabonu
       </div>
       <div className='nav-btns'>
+
+        <div className={`theme-cont ${theme != "dark" ? "" : "theme-light"}`}>
+          <button className='theme-toggle' onClick={()=>handleChangeTheme(()=>{
+            return theme == "dark" ? "light" : "dark"
+          })}>
+            {theme == "dark" ? <Sun/> :  <Moon/> }
+          </button>
+        </div>
+
         {/* theme toggle */}
-        <button onClick={() => setOpenTheme(!openTheme)}>
-          {theme == "dark" ? '🌙 Dark' : '☀️Light'}
-        </button>
+        {/* <button onClick={() => setOpenTheme(!openTheme)} className='darkMode-btn'>
+          {theme == "dark" ? <Sun/> :  <Moon/> }
+        </button> */}
 
         {/* theme menu */}
-        <div className='theme-menu' style={{
+        {/* <div className='theme-menu' style={{
           display: openTheme ? "flex" : "none"
         }}>
           <button onClick={() => handleChangeTheme("dark")}>
-            ☀️Light
+            <Sun/>
           </button>
           <button onClick={() => handleChangeTheme("light")}>
-            🌙 Dark
+           <Moon/>
           </button>
-        </div>
+        </div> */}
         {/* end of theme menu */}
 
 

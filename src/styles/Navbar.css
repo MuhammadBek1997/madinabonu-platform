@@ -1,9 +1,8 @@
 .navbar {
     position: fixed;
-    width: 83vw;
+    width: 84vw;
     height: 3rem;
     background: var(--nav-said);
-
     padding: 1rem;
     border-radius: 0.4rem;
     font-weight: bolder;
@@ -24,8 +23,6 @@
     gap: 20px;
 }
 
-
-
 .section-open .navbar{
     width: 93%;
     left: 5%;
@@ -34,8 +31,7 @@
 .saidbar-btn{
     display: none;
 }
-
-
+/* madinabonu logotipi */
 #logotip {
     width: 50px;
     height: 50px;
@@ -49,22 +45,33 @@
     gap: 10px;
 }
 
-.theme-menu{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    z-index: 10;
+.darkMode-btn{
+    background: none;
+    border: none;
+}
+
+.theme-cont{
+    width: 70px;
+    height: 40px;
+    border: 1px solid var(--bg-cont);
+    border-radius: 30px;
+    position: relative;
+    padding: 2px;
+} 
+.theme-cont.theme-light .theme-toggle{
+    transform: translateX(1px);
+    transition: 500ms;
+}
+
+.theme-toggle{
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    border: none;
     background-color: white;
-    border: 1px solid;
-  }
-  
-
-
+    transform: translateX(30px);
+    transition: 500ms;
+}
 
 
 

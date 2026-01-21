@@ -2,8 +2,8 @@
     width: 60vw;
     height: 30vh;
     padding: 2rem;
-    background-color: var(--bg-del);
-    border: 1px solid var(--border-cont);
+    background-color: var();
+    border: 1px solid;
     border-radius: 0.4rem;
     display: flex;
     align-items: center;

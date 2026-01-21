@@ -5,7 +5,6 @@
     transform-style: preserve-3d;
 
 }
-
 .card .face {
     position: absolute;
     top: 0;
@@ -22,7 +21,10 @@
     border-radius: 0.5rem;
 
 }
-
+.full-info {
+    border-radius: 15px;
+}
+/* old qismi studentlar uchun */
 .card .face.front {
     color: var(--card-text);
     background: var(--nav-said);
@@ -31,7 +33,10 @@
 
 
 }
-
+.card:hover .face.front {
+    transform: perspective(500px) rotateY(180deg);
+}
+/* orqa qismi studentlar uchun */
 .card .face.back {
     color:var(--card-text) ;
     transform: perspective(500px) rotateY(180deg);
@@ -45,24 +50,9 @@
 
 
 }
-
-
-.full-info {
-
-    border-radius: 15px;
-
-}
-
-.card:hover .face.front {
-    transform: perspective(500px) rotateY(180deg);
-}
-
 .card:hover .face.back {
     transform: perspective(500px) rotateY(360deg) translate3d(-30px, -50px, 0);
 }
-
-
-
 .card .face.back h2 {
     display: flex;
     align-items: center;
@@ -73,7 +63,9 @@
 
 }
 
-.card .face .pictures {
+
+/* kerakli keraksiz */
+/* .card .face .pictures {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,4 +73,4 @@
     text-transform: uppercase;
     transform: perspective(500px) translateZ(50px);
 
-}
+} */

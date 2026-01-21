@@ -1,3 +1,5 @@
+
+/* umumiy saidbarga berilgan stil */
 .sidebar {
     width: 11.5vw;
     height: 100vh;
@@ -6,30 +8,28 @@
     padding: 1rem;
     top: 1%;
     border-radius: 0.4rem; 
-
-  
-   
 }
+/* yopilganda berilgan stil */
 .sidebar-open{
     width: 2vw;
 }
-
+/* sahifalar va uni yonidagi btnni o'rab turgan div */
 .saidbarBtn-word{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-
-
+/* saidbardagi menyularni o'rab turgan div */
 .menus {
     padding-top: 1.5rem;
     
 }
+/* nomlarni yonidagi iconlar menulardagi */
 .sidebar-icon{
     width: 30px;
     height: 30px;
 }
-
+/* har bitta menyuni o'rab turgan div */
 .menu {
     display: flex;
     justify-content: start;
@@ -40,12 +40,15 @@
     text-decoration: none;
     color: var(--text);
 }
-
+/*  */
 .tag{
-    color: grey;
+    color: var(--text-cont);
 }
+/* saidbardagi btn */
 .saidbarBtn{
-    background-color: var(--bg);
+    border: none;
+    background: none;
+    color: var(--text-cont);
 
 }
 
