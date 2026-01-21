@@ -26,7 +26,7 @@ const Sidebar = ({setsToggle,sToggle,theme}) => {
         <GraduationCap/> {sToggle ? "":" Kurslar "} 
         </Link>
         <Link to={'/teachers'} className='menu'>
-        <img src={`/images/teach1${theme}.png`} alt="" className='sidebar-icon' /> 
+        <img src={`/images/teach${theme}.png`} alt="" className='sidebar-icon' /> 
         {sToggle ? "":" O'qituvchilar "}
         </Link>
         <Link to={'/topStudents'} className='menu'>
