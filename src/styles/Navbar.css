@@ -52,9 +52,11 @@
 
 .theme-cont{
     width: 70px;
-    height: 40px;
+    height: 39px;
     border: 1px solid var(--bg-cont);
-    border-radius: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
     position: relative;
     padding: 2px;
 } 
@@ -86,7 +88,7 @@
         width: 85vw;
         position: fixed;
         height: fit-content;
-        background-color: var(--bg);
+        background-color: var(--nav-said);
         border: 1px solid var(--border-cont);
         padding: 1rem;
         border-radius: 0.4rem;
@@ -100,7 +102,7 @@
     }
     .saidbar-btn{
         display: inline;
-        background-color: var(--bg);
+        background-color: var(--nav-said);
         
     }
   }
@@ -111,7 +113,7 @@
         width: 93vw;
         position: fixed;
         height: fit-content;
-        background-color: var(--bg);
+        background-color: var(--nav-said);
         border: 1px solid var(--border-cont);
         padding: 1rem;
         border-radius: 0.4rem;

@@ -69,6 +69,7 @@
 
  .card .face.front {
      color: rgb(22, 21, 21);
+     width: 100%;
  }
 
  .card:hover .face.front {
@@ -173,11 +174,19 @@
          margin-left: 2px;
 
      }
+     
+     .card {
+        position: relative;
+        width: 477px;
+        height: 400px;
+        transform-style: preserve-3d;
+        border-radius: 15px;
+    }
 
 
      .pictures {
          width: 477px;
-         height: 210px;
+         height: 310px;
          border-top-left-radius: 0.4rem;
          border-top-right-radius: 0.4rem;
 

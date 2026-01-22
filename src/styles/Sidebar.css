@@ -7,7 +7,8 @@
     background: var(--nav-said);
     padding: 1rem;
     top: 1%;
-    border-radius: 0.4rem; 
+    border-radius: 0.4rem;
+    z-index: 30; 
 }
 /* yopilganda berilgan stil */
 .sidebar-open{
@@ -59,7 +60,7 @@
         width: 210px;
         height: 100vh;
         position: fixed;
-        background-color: var(--bg);
+        background-color: var(--nav-said);
         border: 1px solid var(--border-cont);
         padding-top: 100px;
         top: 1%;
@@ -77,8 +78,12 @@
         font-size: 20px;
         padding: 0.4rem;
         text-decoration: none;
-        color: var(--text-cont);
     }
+    
+    .menu span{
+        color: var(--text-cont);
+    } 
+
 
     .menus {
         padding-top: 1.5rem;
@@ -99,7 +104,7 @@
         width: 210px;
         height: 100vh;
         position: fixed;
-        background-color: var(--bg);
+        background-color: var(--nav-said);
         border: 1px solid var(--border-cont);
         padding-top: 100px;
         top: 1%;
@@ -110,6 +115,7 @@
     
     .sidebar-open{
         transform:translateX(-100%) ;
+        background-color: var(--nav-said);
     }
     .tag{
         color: grey;
