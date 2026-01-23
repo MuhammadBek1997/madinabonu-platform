@@ -1,5 +1,5 @@
 .hero {
-    width: 60vw;
+    width: 1200px;
     height: 30vh;
     padding: 2rem;
     background-color: var();
@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: start;
     gap: 200px;
-    margin-left: 10vw;
+    margin-left: 13vw;
 }
 
  .for-words-btns h1{
@@ -21,6 +21,11 @@
     width: 30vw;
     color: var(--text-cont);
     align-self: flex-start;
+}
+
+.section-open .hero{
+    width: 1200px;
+    margin-left: 3%;
 }
 
 .btn{
@@ -75,14 +80,9 @@ background-color: var(--nav-said);
 
 
 @media (max-width: 500px) {
-    .img-hero{
-        width: 500px;
-        height: 500px;
-        display: none;    
-    }
     .hero {
-        width: 60vw;
-        height: 30vh;
+        width: 498px;
+        height: 10vh;
         /* padding: 2rem; */
         background-color: var(--bg-del);
         border: 1px solid var(--border-cont);
@@ -94,4 +94,8 @@ background-color: var(--nav-said);
         /* margin-left: 10vw; */
     }
     
+    .section-open .hero{
+        width: 500px;
+        margin-left: 3%;
+    }
 }

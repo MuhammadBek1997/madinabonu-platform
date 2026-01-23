@@ -3,12 +3,13 @@ import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 
-const CoursesCard = ({ name, subject, img, courses, achievements, GroupPhotos, WorkExperience, students, AboutTeacher,id }) => {
+const CoursesCard = ({ name, subject, img, courses, achievements, GroupPhotos, WorkExperience, students, AboutTeacher,id, setsToggle,sToggle }) => {
 
     const [cardToggle, setCardToggle] = useState(false)
 
     return (
         <div>
+            
             <div className="card">
                 <div className='face front'>
                     <img className='pictures' src={img} alt={name} />

@@ -1,7 +1,7 @@
 import '../styles/Home.css'
 
 
-const Home = () => {
+const Home = ({ setsToggle,sToggle }) => {
 
   return (
     <section>

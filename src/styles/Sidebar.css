@@ -1,7 +1,7 @@
 
 /* umumiy saidbarga berilgan stil */
 .sidebar {
-    width: 11.5vw;
+    width: 14rem;
     height: 100vh;
     position: fixed;
     background: var(--nav-said);
@@ -12,7 +12,7 @@
 }
 /* yopilganda berilgan stil */
 .sidebar-open{
-    width: 2vw;
+    width: 2rem;
 }
 /* sahifalar va uni yonidagi btnni o'rab turgan div */
 .saidbarBtn-word{
