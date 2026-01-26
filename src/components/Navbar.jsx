@@ -1,9 +1,13 @@
 import React from 'react'
 import '../styles/Navbar.css'
 import { Atom, BrainCircuit, Lightbulb,ChevronLeft, ChevronRight, Sun, Moon  } from 'lucide-react';
+import { useGlobalContext } from '../Context';
 // App css import qilingan
 
-const Navbar = ({ user, theme, openTheme, setOpenTheme, handleChangeTheme, setsToggle,sToggle }) => {
+const Navbar = () => {
+
+
+  let{ user, theme, openTheme, setOpenTheme, handleChangeTheme, setsToggle,sToggle } = useGlobalContext()
   return (
     <div className='navbar'>
       <div className="word-logo">

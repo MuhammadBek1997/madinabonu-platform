@@ -1,14 +1,17 @@
 import React, { useState } from 'react'
 import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { useGlobalContext } from '../Context'
 
 
-const CoursesCard = ({ name, subject, img, courses, achievements, GroupPhotos, WorkExperience, students, AboutTeacher,id, setsToggle,sToggle }) => {
+const CoursesCard = () => {
 
+
+    let{ name, subject, img, courses, achievements, GroupPhotos, WorkExperience, students, AboutTeacher,id, setsToggle,sToggle } = useGlobalContext()
     const [cardToggle, setCardToggle] = useState(false)
 
     return (
-        <div>
+        // <div>
             
             <div className="card">
                 <div className='face front'>
@@ -48,7 +51,7 @@ const CoursesCard = ({ name, subject, img, courses, achievements, GroupPhotos, W
                     
                 </div>
             </div>
-        </div>
+        // </div>
 
     )
 }

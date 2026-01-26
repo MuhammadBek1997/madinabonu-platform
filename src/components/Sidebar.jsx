@@ -2,8 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import '../styles/Sidebar.css'
 import { Home,  ChevronLeft, ChevronRight, GraduationCap, } from 'lucide-react'
+import { useGlobalContext } from '../Context';
 
-const Sidebar = ({setsToggle,sToggle,theme}) => {
+const Sidebar = () => {
+
+  let{setsToggle,sToggle,theme} = useGlobalContext()
   return (
     <div className={`sidebar ${sToggle ? "sidebar-open":""}`}>
       <div className="saidbarBtn-word" >

@@ -4,6 +4,8 @@ import { Link, useParams } from 'react-router-dom'
 
 
 const SingleTeachers = () => {
+
+  
   let teacherId = useParams()
   
   console.log(teacherId.id)

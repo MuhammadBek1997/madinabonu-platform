@@ -1,8 +1,12 @@
 
 import { ChevronDown, ChevronUp } from 'lucide-react'
 import React, { useState } from 'react'
+import { useGlobalContext } from '../Context'
 
-const StudentCard = ({ courses, achievements, GroupPhotos, WorkExperience, students, AboutTeacher }) => {
+const StudentCard = () => {
+
+    let{ courses, achievements, GroupPhotos, WorkExperience, students, AboutTeacher } = useGlobalContext()
+    
     const [cardButton, setCardButton] = useState(false)
 
     return (

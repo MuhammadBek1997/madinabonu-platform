@@ -1,8 +1,12 @@
 import React from 'react'
 import '../styles/Students.css'
 import StudentCard from '../components/StudentCard'
+import { useGlobalContext } from '../Context'
 
-const TopStudents = ({courses}) => {
+const TopStudents = () => {
+
+  let {courses} = useGlobalContext()
+  
   return (
     <section className='course-list'>
     {

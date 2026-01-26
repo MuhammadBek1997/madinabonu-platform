@@ -1,7 +1,10 @@
+import { useGlobalContext } from '../Context'
 import '../styles/Home.css'
 
 
-const Home = ({ setsToggle,sToggle }) => {
+const Home = () => {
+
+let { setsToggle,sToggle } = useGlobalContext()
 
   return (
     <section>
