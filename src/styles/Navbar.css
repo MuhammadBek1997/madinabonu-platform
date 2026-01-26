@@ -90,8 +90,8 @@
 
   @media (max-width: 850px) {
 
-    .navbar {
-        width: 85vw;
+   .navbar {
+        width: 76vw;
         position: fixed;
         height: fit-content;
         background-color: var(--nav-said);
@@ -103,7 +103,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        left: 90px;
+        left: 245px;
 
     }
     .saidbar-btn{
@@ -113,8 +113,9 @@
     }
     
     .section-open .navbar{
-        width: 89%;
-        left: 0.5%;
+        width: 80%;
+        left: 9.5%;
+
     }
     
   }

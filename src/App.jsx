@@ -10,6 +10,7 @@ import SingleTeachers from './components/SingleTeachers'
 import { useGlobalContext } from './Context'
 
 function App() {
+  
   let {theme,login,sToggle} = useGlobalContext()
 
 

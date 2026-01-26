@@ -117,11 +117,9 @@
 
     }
 
-
-
     .card {
         position: relative;
-        width: 500px;
+        width: 400px;
         height: 400px;
         transform-style: preserve-3d;
         border-radius: 15px;

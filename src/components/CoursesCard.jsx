@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom'
 import { useGlobalContext } from '../Context'
 
 
-const CoursesCard = () => {
+const CoursesCard = ({ name, subject, img, courses,achievements, GroupPhotos, WorkExperience, students, AboutTeacher,id }) => {
 
+    let{ setsToggle,sToggle } = useGlobalContext()
 
-    let{ name, subject, img, courses, achievements, GroupPhotos, WorkExperience, students, AboutTeacher,id, setsToggle,sToggle } = useGlobalContext()
     const [cardToggle, setCardToggle] = useState(false)
 
     return (
-        // <div>
+        <div>
             
             <div className="card">
                 <div className='face front'>
@@ -51,7 +51,7 @@ const CoursesCard = () => {
                     
                 </div>
             </div>
-        // </div>
+         </div>
 
     )
 }
