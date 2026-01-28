@@ -1,7 +1,10 @@
 import { Save } from 'lucide-react'
 import CourseCard from '../components/CourseCard'
+import { useGlobalContext } from '../Context'
 
-const Home = ({theme,openTheme,setOpenTheme,handleChangeTheme,courses}) => {
+const Home = () => {
+
+    let {theme,openTheme,setOpenTheme,handleChangeTheme,courses} = useGlobalContext()
 
   return (
     <div>

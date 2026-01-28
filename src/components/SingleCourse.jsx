@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { useGlobalContext } from '../Context'
 
-const SingleCourse = ({courses}) => {
+const SingleCourse = () => {
+
+    let {courses} = useGlobalContext()
 
     let courseId = useParams()
 

@@ -1,6 +1,10 @@
 import React from 'react'
+import { useGlobalContext } from '../Context'
 
-const About = ({user}) => {
+const About = () => {
+
+  let {user} = useGlobalContext()
+
   return (
     <div className='about'>About {user.name}</div>
   )
