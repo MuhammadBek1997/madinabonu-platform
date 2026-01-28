@@ -13,10 +13,16 @@ const Navbar = () => {
       <div className="word-logo">
       
       {/* saidbarni ochuvchi btn  */}
-      <button className='saidbar-btn' onClick={() => setsToggle(!sToggle)}>
+      {/* <button className='saidbar-btn' onClick={() => setsToggle(!sToggle)}>
           
       {!sToggle ? <ChevronLeft/>:<ChevronRight/>}
-    </button>
+    </button> */}
+
+<div className={`toggle ${!sToggle ? "active":""}`} onClick={()=>setsToggle(!sToggle)}>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
 
   {/*navbardagilogo va mmadinabonu yozuvi   */}
@@ -30,7 +36,7 @@ const Navbar = () => {
           <button className='theme-toggle' onClick={()=>handleChangeTheme(()=>{
             return theme == "dark" ? "light" : "dark"
           })}>
-            {theme == "dark" ? <Sun/> :  <Moon/> }
+            {/* {theme == "dark" ?  :   } */}
           </button>
         </div>
 

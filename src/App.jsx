@@ -16,13 +16,14 @@ function App() {
 
   
 
-
   document.getElementById("root").parentElement.setAttribute("data-theme",theme)
 
   return (
     <div id={theme} className='body'>
       <Sidebar />
-      <section className={sToggle ? "section-open" : ""} >
+      <section  style={{
+        paddingLeft:!sToggle ? "265px":"70px"
+      }}>
 
       <Navbar  />
       <Routes>

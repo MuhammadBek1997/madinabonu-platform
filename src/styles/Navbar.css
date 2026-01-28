@@ -1,6 +1,6 @@
 .navbar {
-    position: fixed;
-    width: 84vw;
+    position: sticky;
+    width: 98%;
     height: 3rem;
     background: var(--nav-said);
     padding: 1rem;
@@ -9,11 +9,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 1%;
-    left: 14%;
     font-size: 35px;
     z-index: 1000;
- 
+    top: 1%;
+    border: 1px solid red;
 }
 
 /* Nav-btns ichidagi elementlar ham yonma-yon turishi uchun */
@@ -23,16 +22,18 @@
     gap: 20px;
 }
 
-.section-open .navbar{
-    width: 93%;
-    left: 5%;
-}
 
 
-
-.saidbar-btn{
+.navbar .toggle {
     display: none;
 }
+
+
+
+.saidbar-btn {
+    display: none;
+}
+
 /* madinabonu logotipi */
 #logotip {
     width: 50px;
@@ -47,28 +48,29 @@
     gap: 10px;
 }
 
-.darkMode-btn{
+.darkMode-btn {
     background: none;
     border: none;
 }
 
-.theme-cont{
+.theme-cont {
     width: 40px;
     height: 19px;
-    border: 1px solid var(--bg-cont);
+    border: 1px solid var(--toggle-cont-color);
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: start;
     position: relative;
     padding: 1px;
-} 
-.theme-cont.theme-light .theme-toggle{
+}
+
+.theme-cont.theme-light .theme-toggle {
     transform: translateX(1px);
     transition: 500ms;
 }
 
-.theme-toggle{
+.theme-toggle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -79,6 +81,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--toggle-color);
 }
 
 
@@ -88,10 +91,10 @@
 
 
 
-  @media (max-width: 850px) {
+@media (max-width: 850px) {
 
-   .navbar {
-        width: 73.5vw;
+    .navbar {
+        width: 100%;
         position: fixed;
         height: fit-content;
         background-color: var(--nav-said);
@@ -103,25 +106,23 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        left: 245px;
+        /* top: 10px; */
+        /* left: 245px; */
 
     }
-    .saidbar-btn{
+
+    .saidbar-btn {
         display: inline;
         background-color: var(--nav-said);
-        
-    }
-    
-    .section-open .navbar{
-        width: 80.5%;
-        left: 10%;
 
     }
-    
-  }
-  
-  
-  @media (max-width:500px) {
+
+
+
+}
+
+
+@media (max-width:500px) {
     .navbar {
         width: 92vw;
         position: fixed;
@@ -137,15 +138,19 @@
         justify-content: space-between;
         align-items: center;
     }
-    .saidbar-btn{
+
+    .saidbar-btn {
         display: inline;
     }
 
-    .section-open .navbar{
+    .section-open .navbar {
         width: 89.5%;
         left: 0.5%;
     }
-    
-  }
-  
-  
+
+    .navbar .toggle {
+        display: flex;
+    }
+
+
+}

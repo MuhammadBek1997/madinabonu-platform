@@ -12,12 +12,16 @@
   --bg-cont: #202020;
   --nav-said: #363636;
   --text-cont: #cac7c7bf;
+  --toggle-color: #2a74e4;
+  --toggle-cont-color:#E5E5E5;
 }
 [data-theme="dark"] {
   --text: #111827;
   --bg-cont: #ffffff;
   --nav-said:#DFDFDF;
   --text-cont: #423e3ebf;
+  --toggle-color:#ca11ca ;
+  --toggle-cont-color:#1F1F1F;
 
 }
 
@@ -34,16 +38,11 @@ body {
 
 /* pagelardagi sectionlarga berilagan stillar */
 section{
-  padding-top: 3rem;
-  display: flex;
-  justify-content: center;
+  position: relative;
 }
-.section-open{
-  padding-left: 0;
-}
+
 /* oq qora rejim menyusi uchun berilgan stillar */
 .theme-menu{
-  /* background-color: var(--bg-cont); */
   position: absolute;
   display: flex;
   justify-content: center;

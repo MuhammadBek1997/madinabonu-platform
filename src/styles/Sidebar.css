@@ -43,7 +43,7 @@
 }
 /*  */
 .tag{
-    color: var(--text-cont);
+    color: var(--toggle-color);
 }
 /* saidbardagi btn */
 .saidbarBtn{
@@ -53,6 +53,64 @@
 
 }
 
+/* saidbar btnga berilgan yangi stil */
+.toggle {
+    position: relative;
+    min-width: 30px;
+    min-height: 30px;
+    /* border: 1px solid var(--toggle-cont-color); */
+    /* background: #fff; */
+    /* box-shadow: 0px 10px 20px rgba(180, 180, 180, 0.08); */
+    /* border-radius: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.toggle span {
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background: var(--toggle-color);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.toggle span:nth-child(1) {
+    transform: translateY(-10px);
+    width: 20px;
+    left: 1px;
+}
+
+.toggle.active span:nth-child(1) {
+    width: 20px;
+    transform: translateY(0) rotate(45deg);
+    transition-delay: 0.125s;
+}
+
+.toggle span:nth-child(2) {
+    transform: translateY(10px);
+    width: 20px;
+    left: 1px;
+}
+
+.toggle.active span:nth-child(2) {
+    width: 20px;
+    transform: translateY(0) rotate(315deg);
+    transition-delay: 0.25s;
+}
+
+.toggle.active span:nth-child(3) {
+    transform: translateX(60px);
+}
+
+
+.saidbar .toggle{
+    display: inline;
+}
 
 
 @media (max-width: 850px) {
@@ -125,5 +183,9 @@
     .saidbarBtn{
         display: none;
     }
+    .sidebar .toggle{
+        display: none;
+    }
+   
 }
 
