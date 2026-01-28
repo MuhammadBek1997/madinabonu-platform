@@ -91,7 +91,7 @@
   @media (max-width: 850px) {
 
    .navbar {
-        width: 76vw;
+        width: 73.5vw;
         position: fixed;
         height: fit-content;
         background-color: var(--nav-said);
@@ -113,8 +113,8 @@
     }
     
     .section-open .navbar{
-        width: 80%;
-        left: 9.5%;
+        width: 80.5%;
+        left: 10%;
 
     }
     
