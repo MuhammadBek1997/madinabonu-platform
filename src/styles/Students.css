@@ -1,166 +1,23 @@
-.card {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    transform-style: preserve-3d;
-
-}
-.card .face {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    backface-visibility: hidden;
-    transition: 1.1s ease-in-out;
-    transform: perspective(500px) rotateY(0deg);
-    border-radius: 0.5rem;
-
-}
-.full-info {
-    border-radius: 15px;
-}
-/* old qismi studentlar uchun */
-.card .face.front {
-    color: var(--card-text);
-    background: var(--nav-said);
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
-
-
-}
-.card:hover .face.front {
-    transform: perspective(500px) rotateY(180deg);
-}
-/* orqa qismi studentlar uchun */
-.card .face.back {
-    color:var(--card-text) ;
-    transform: perspective(500px) rotateY(180deg);
-    text-align: start;
-   background: var(--nav-said);
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
-    
 
 
 
 
-}
-.card:hover .face.back {
-    transform: perspective(500px) rotateY(360deg) translate3d(-30px, -50px, 0);
-}
-.card .face.back h2 {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    font-size: 20px;
-    text-transform: uppercase;
-    transform: perspective(500px) translateZ(50px);
-
-}
 
 
-/* kerakli keraksiz */
-/* .card .face .pictures {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    text-transform: uppercase;
-    transform: perspective(500px) translateZ(50px);
 
-} */
+
+
+
 @media (max-width:850px) {
 
-    .course-list {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        justify-content: center;
-        align-items: center;
-        gap: 20px; 
 
-    }
-    .section-open .card {
-        position: relative;
-        width: 358px;
-        height: 350px;
-        transform-style: preserve-3d;
-        border-radius: 15px;
-    }
-
-    .pictures {
-        width: 200px;
-        height: 260px;
-        border-top-left-radius: 0.4rem;
-        border-top-right-radius: 0.4rem;
-
-    }
-
+    
+   
 
 }
 
 @media (max-width:500px) {
-    .course-list {
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        margin-left: 2px;
-        /* background-color: var(--nav-said); */
+    
 
-    }
-
-    .card {
-        position: relative;
-        width: 400px;
-        height: 400px;
-        transform-style: preserve-3d;
-        border-radius: 15px;
-    }
-
-
-    .pictures {
-        width: 400px;
-        height: 310px;
-        border-top-left-radius: 0.4rem;
-        border-top-right-radius: 0.4rem;
-
-    }
-
-    .card .face.back h2 {
-
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        font-size: 20px;
-        margin-left: 20px;
-       
-    }
-
-    .card .face h4 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 10px;
-        margin-left: 20px;
-        text-transform: uppercase;
-        transform: perspective(500px) translateZ(50px);
-   
-    }
-
-   
-     .card .face.back {
-        color: black;
-        transform: perspective(500px) rotateY(180deg);
-        width: 400px;
-   
-   
-    }
-
-
+    
 }

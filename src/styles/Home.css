@@ -1,101 +1,17 @@
-.hero {
-    width: 1200px;
-    height: 30vh;
-    padding: 2rem;
-    background-color: var();
-    border: 1px solid;
-    border-radius: 0.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 200px;
-    margin-left: 13vw;
-}
 
- .for-words-btns h1{
-    margin-bottom: 1.5rem;
-    color: var(--text);
-}
 
-.for-words-btns{
-    width: 30vw;
-    color: var(--text-cont);
-    align-self: flex-start;
-}
 
-.section-open .hero{
-    width: 1200px;
-    margin-left: 3%;
-}
 
-.btn{
-    width: 150px;
-    height: 40px;
-    border: none;
-    background-color: var(--bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 17px;
-    
-}
-.courses-btn{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-top: 30px;
-    color: var(--text);
-}
 
-.img-hero{
-    width: 500px;
-    height: 500px;
-}
 
-.btn{
-background-color: var(--nav-said);
-}
-    
+
 @media (max-width: 850px) {
-    .hero {
-        width: 100%;
-        height: 30vh;
-        padding: 2rem;
-        background-color: var(--bg-del);
-        border: 1px solid var(--border-cont);
-        border-radius: 0.4rem;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        gap: 200px;
-        margin-left: 10vw;
-    }
     
-    .img-hero{
-        width: 500px;
-        height: 500px;
-        display: none;    
-    }
 }
 
 
 @media (max-width: 500px) {
-    .hero {
-        width: 498px;
-        height: 10vh;
-        /* padding: 2rem; */
-        background-color: var(--bg-del);
-        border: 1px solid var(--border-cont);
-        border-radius: 0.4rem;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        gap: 200px;
-        /* margin-left: 10vw; */
-    }
     
-    .section-open .hero{
-        width: 500px;
-        margin-left: 3%;
-    }
+    
+
 }

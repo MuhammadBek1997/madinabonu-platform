@@ -14,42 +14,13 @@ const TeachersCard = ({ name, subject, img, courses,achievements, GroupPhotos, W
         <div>
             
             <div className="card">
-                <div className='face front'>
-                    <img className='pictures' src={img} alt={name} />
+                    <div className='picture-cont'>
+                    <img className='pictures' src={img} alt={name} /> 
+                    </div>
                    <div className="teacher-info">
-                    <h1>
-                        {name}
-                    </h1>
-                    <h1>
-                        {subject}
-                    </h1>
-                    </div>
-                </div>
-                <div className='face back'>
-                    <div className='full-info'>
-                       <h2>
-                        {courses}
-                    </h2>
-                    <h2>
-                        {achievements}
-                    </h2>
-                    <h2>
-                        {GroupPhotos}
-                    </h2>
-                    <h2>
-                        {WorkExperience}
-                    </h2>
-                    <h2>
-                        {students}
-                    </h2>
-                    <h4 >
-                        {AboutTeacher}
-                    </h4> 
+                  
                   <Link to={`/teachersSingle/${id}`}><button className='dataToggle'>Batafsil</button> </Link>
-                 
                     </div>
-                    
-                </div>
             </div>
          </div>
 

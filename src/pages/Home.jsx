@@ -8,25 +8,7 @@ let { setsToggle,sToggle } = useGlobalContext()
 
   return (
     <section>
-      <div className='hero'>
-        <div className="for-words-btns">
-          <h1 >
-            Madinabonu - online kurslari
-          </h1>
-          <p>
-
-            Madinabonu — bu sizga fanlarni o‘rganishda yordam beradigan platforma.
-            Pullik darslardagi ma’lumotlarni bepul o‘rganing. Barchasi bir joyda!
-          </p>
-          <div className="courses-btn">
-          <div className="btn">Kurslar</div>
-          <div className="btn">Loyihalar</div>
-          </div>
-        </div>
-        <div className="nav-logo">
      
-      </div>
-      </div>
     </section>
   )
 }
