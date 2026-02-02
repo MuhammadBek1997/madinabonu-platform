@@ -3,34 +3,115 @@
      grid-template-columns: repeat(2, 1fr);
      justify-content: center;
      align-items: center;
-     gap: 60px;
+     gap: 30px;
      margin-top: 50px;
+     margin-right: 10px;
 
  }
+
  .card {
-    position: relative;
-    height: 400px;
- padding: 1rem;
+     position: relative;
+     height: 420px;
+     padding: 1rem;
+     display: flex;
+     align-items: start;
+     justify-content: start;
+     gap: 30px;
+     background-color: var(--nav-said);
+     border-radius: 2rem;
+     font-size: 25px;
+
+ }
+.lesson-days{
+    display: flex;
+    justify-content: space-between;
+}
+
+ .infos{
+    line-height: 40px;
+    font-weight: bolder;
+ }
+
+ .inf{
+    color: var(--info);
+    font-size: 25px;
+    font-weight: normal;
+
+ }
+
+ .full-info{
+    width: 100%;
+    display: flex;
+}
+.short-info{
+    width: 60%;
+    height: 92%;
+   background: var(--bg-cont);
+   border-radius: 1.5rem;
+   padding: 1rem;
+   display: inline;
+}
+.extra{
+    width: 95%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 10px;
+    border-radius: 0.8rem;
+    margin-top: 10px;
+    padding: 0.5rem;
     background-color: var(--nav-said);
-    border-radius: 2rem;
-
+    padding-left: 1rem;
+    
+}
+.filial{
+    top: 0;
+    font-size: 22px;
+    line-height: 30px;
+    flex: 1;
+    height: fit-content;
+    background-color: var(--nav-said);
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+.days{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+}
+.lesson-days{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
 }
 
+.full-info-cont1{
+   width: 100%; 
+   border: 1px solid yellow;
+   flex: 1;
+   
+}
+.full-info-cont2{
+    width: 100%; 
+    border: 1px solid red;
+    flex: 1;
+ }
 
-.dataToggle:hover {
-    transform: translateY(-2px) scale(1.03);
-    box-shadow:
-        0 5px 12px rgba(0, 0, 0, 0.15),
-        0 0 10px rgba(142, 45, 226, 0.5);
-    filter: brightness(1.1);
-}
-.card .face.front {
-    color: var(--card-text);
-    background: var(--nav-said);
-}
+ .dataToggle:hover {
+     transform: translateY(-2px) scale(1.03);
+     box-shadow:
+         0 5px 12px rgba(0, 0, 0, 0.15),
+         0 0 10px rgba(142, 45, 226, 0.5);
+     filter: brightness(1.1);
+ }
+
+ .card .face.front {
+     color: var(--card-text);
+     background: var(--nav-said);
+ }
 
  .dataToggle {
      width: 100%;
@@ -38,7 +119,7 @@
      font-size: 20px;
      font-weight: 500;
      border: none;
-     border-radius: 6px;
+     border-radius: 0.8rem;
      color: white;
      cursor: pointer;
      margin-top: 10px;
@@ -47,17 +128,19 @@
      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
  }
 
- 
-.picture-cont{
-    width: 300px;
-    overflow: hidden;
-    border-radius: 1rem;
-}
+
+ .picture-cont {
+     width: 300px;
+     height: 100%;
+     overflow: hidden;
+     border-radius: 1rem;
+ }
+
  .pictures {
      width: 400px;
-margin-left: -20%;
+     margin-left: -20%;
      border-radius: 0.4rem;
-     
+
  }
 
 
@@ -66,15 +149,17 @@ margin-left: -20%;
  @media (max-width:850px) {
      .course-list {
          display: grid;
-         grid-template-columns: repeat(2, auto);
-         justify-content: center;
+         grid-template-columns: repeat(1, 1fr);
+         justify-content: start;
          align-items: center;
+       margin-top: 100px;
+         /* gap: 20px; */
 
      }
 
      .card {
          position: relative;
-         width: 390px;
+         width: 100%;
          height: 400px;
          transform-style: preserve-3d;
          border-radius: 15px;
@@ -84,14 +169,14 @@ margin-left: -20%;
 
      .pictures {
          width: 330px;
-         height: 260px;
+       height: 100%;
          border-top-left-radius: 0.4rem;
          border-top-right-radius: 0.4rem;
 
      }
 
      section {
-         padding-left: 10rem !important;
+         padding-left: 6rem !important;
      }
 
  }
@@ -99,21 +184,14 @@ margin-left: -20%;
  @media (max-width:500px) {
      .course-list {
          display: grid;
-         grid-template-columns: repeat(1, auto);
+         grid-template-columns: repeat(1, 1fr);
          justify-content: center;
          align-items: center;
          gap: 50px;
+         padding: 0,2rem;
+         overflow-x: hidden;
+         
 
-     }
-
-
-
-     .card {
-         position: relative;
-         width: 500px;
-         height: 400px;
-         transform-style: preserve-3d;
-         border-radius: 15px;
      }
 
 
@@ -125,20 +203,18 @@ margin-left: -20%;
 
      }
 
-     .card .face.front .teacher-info {
-         position: absolute;
-         bottom: 0;
-         text-align: start;
-     }
-
-     .course-list {
-         width: 100%;
-
-     }
-
      section {
          padding-left: 0 !important;
      }
+    
+     .short-info{
+        width: 400px;
+       background: var(--bg-cont);
+       border-radius: 1.5rem;
+       padding: 1rem;
+       display: none;
+    }
+    
 
 
  }

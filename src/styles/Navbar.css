@@ -106,9 +106,8 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        /* top: 10px; */
-        /* left: 245px; */
-
+        
+       
     }
 
     .saidbar-btn {
@@ -124,7 +123,7 @@
 
 @media (max-width:500px) {
     .navbar {
-        width: 92vw;
+        width: 100%;
         position: fixed;
         height: fit-content;
         background-color: var(--nav-said);
@@ -143,10 +142,6 @@
         display: inline;
     }
 
-    .section-open .navbar {
-        width: 89.5%;
-        left: 0.5%;
-    }
 
     .navbar .toggle {
         display: flex;
