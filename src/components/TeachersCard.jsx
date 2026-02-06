@@ -42,6 +42,9 @@ const TeachersCard = ({ name, subject, img, courses, achievements, GroupPhotos, 
                     <Link to={`/teachersSingle/${id}`}><button className='dataToggle'>Batafsil</button> </Link>
                 </div>
             </div>
+            <div className="card-mobile">
+                
+            </div>
         </div>
 
     )

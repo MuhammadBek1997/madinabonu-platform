@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/Teachers.css'
+import '../styles/SinglePage.css'
 // import '../styles/ForCards.css'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import CoursesCard from '../components/CoursesCard'

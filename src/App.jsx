@@ -25,6 +25,7 @@ function App() {
         paddingLeft:!sToggle ? "265px":"70px"
       }}>
 
+     
       <Navbar  />
       <Routes>
         <Route path='/' element={<Home/>} />
@@ -60,5 +61,5 @@ export default App
 
 
 
-// saidbar ichi
+// sidebar ichi
 // setsToggle={setsToggle} sToggle={sToggle} theme={theme}

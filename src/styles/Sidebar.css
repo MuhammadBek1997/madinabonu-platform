@@ -4,7 +4,7 @@
     width: 14rem;
     height: 100vh;
     position: fixed;
-    background: var(--nav-said);
+    background: var(--nav-side);
     padding: 1rem;
     top: 1%;
     border-radius: 0.4rem;
@@ -15,7 +15,7 @@
     width: 2rem;
 }
 /* sahifalar va uni yonidagi btnni o'rab turgan div */
-.saidbarBtn-word{
+.sidebarBtn-word{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -29,6 +29,10 @@
 .sidebar-icon{
     width: 30px;
     height: 30px;
+}
+.sidebar-icon1{
+    width: 25px;
+    height: 25px;
 }
 /* har bitta menyuni o'rab turgan div */
 .menu {
@@ -46,7 +50,7 @@
     color: var(--toggle-color);
 }
 /* saidbardagi btn */
-.saidbarBtn{
+.sidebarBtn{
     border: none;
     background: none;
     color: var(--text-cont);
@@ -58,10 +62,6 @@
     position: relative;
     min-width: 30px;
     min-height: 30px;
-    /* border: 1px solid var(--toggle-cont-color); */
-    /* background: #fff; */
-    /* box-shadow: 0px 10px 20px rgba(180, 180, 180, 0.08); */
-    /* border-radius: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,8 +108,8 @@
 }
 
 
-.saidbar .toggle{
-    display: inline;
+.sidebar .toggle{
+    display: flex;
 }
 
 
@@ -118,7 +118,7 @@
         width: 210px;
         height: 100vh;
         position: fixed;
-        background-color: var(--nav-said);
+        background-color: var(--nav-side);
         border: 1px solid var(--border-cont);
         padding-top: 100px;
         top: 1%;
@@ -151,7 +151,7 @@
         color: grey;
         display: none;
     }
-    .saidbarBtn{
+    .sidebarBtn{
         display: none;
     }
 }
@@ -162,7 +162,7 @@
         width: 210px;
         height: 100vh;
         position: fixed;
-        background-color: var(--nav-said);
+        background-color: var(--nav-side);
         border: 1px solid var(--border-cont);
         padding-top: 100px;
         top: 1%;
@@ -173,14 +173,14 @@
     
     .sidebar-open{
         transform:translateX(-100%) ;
-        background-color: var(--nav-said);
+        background-color: var(--nav-side);
     }
     .tag{
         color: grey;
         display: none;
     }
     
-    .saidbarBtn{
+    .sidebarBtn{
         display: none;
     }
     .sidebar .toggle{
