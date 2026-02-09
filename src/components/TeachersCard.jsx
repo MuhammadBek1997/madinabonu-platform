@@ -12,7 +12,7 @@ const TeachersCard = ({ name, subject, img, courses, achievements, GroupPhotos, 
     // const [cardToggle, setCardToggle] = useState(false)
 
     return (
-        <div>
+        <div className='container-cards'>
 
             <div className="card">
                 <div className='picture-cont'>
@@ -42,7 +42,10 @@ const TeachersCard = ({ name, subject, img, courses, achievements, GroupPhotos, 
                     <Link to={`/teachersSingle/${id}`}><button className='dataToggle'>Batafsil</button> </Link>
                 </div>
             </div>
-            <div className="card-mobile">
+            <div className="card-mobile" style={{
+                backgroundImage:`url(${img})`
+            }}>
+                    <Link to={`/teachersSingle/${id}`}><button className='dataToggle'>Batafsil</button> </Link>
                 
             </div>
         </div>

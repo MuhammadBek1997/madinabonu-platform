@@ -182,20 +182,30 @@
             grid-template-columns: repeat(1, 1fr);
             justify-content: center;
             align-items: center;
-            gap: 50px;
+            gap: 20px;
             padding: 0.5rem;
             overflow-x: hidden !important;
-            margin-top: 50px !important;
+            margin-top: 30px !important;
         }
         .card-mobile {
-            width: 10vw;
-            border: 1px solid red;
-           background-image: url("img/biologiya.png") ;
-           background-size: cover;      
-           background-repeat: no-repeat;
-           background-position: center; 
+            width: 95%;
+            height: 100vw;
+            border-radius: 1rem;
+            /* border: 1px solid red; */
+            display: block;
+            background-size: cover; 
+            background-position: center;
+            margin-left: 15px;
          }
-        
+
+         .card-mobile .dataToggle{
+
+         }
+        .container-cards{
+            width: 500px;
+            padding: 1rem;
+
+        }
         .card {
         display: none;
         }

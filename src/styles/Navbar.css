@@ -159,13 +159,13 @@
     
     .navbar-cont {
         position: fixed;
-        width: 102.5vw;
+        width: 104.5vw;
         height: 3rem;
         top: 1%;
        right: 0;
        display: flex;
        justify-content: flex-end;
-       margin-right:15px;
+       margin-right:10px;
        /* padding-right:50px; */
        z-index: 1000;
     }
