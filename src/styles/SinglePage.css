@@ -28,8 +28,8 @@
     background: var(--nav-side);
     padding: 1rem;
     border-radius: 0.4rem;
-    
-    
+
+
 }
 
 .basic-information {
@@ -59,7 +59,7 @@
     border-bottom-right-radius: 1rem;
     padding: 1rem;
     margin-bottom: 20px;
-  
+
 }
 
 
@@ -68,31 +68,32 @@
     height: 100%;
     background: var(--nav-side);
     border-radius: 1.5rem;
-    
-    
+
+
 }
 
 .for-short-inf {
     flex: 3;
     height: 100%;
-    
+
     background: var(--nav-side);
     border-radius: 1.5rem;
 }
 
-.inner-cont-2{
+.inner-cont-2 {
     width: 100%;
     height: 40%;
-    
+
     background: var(--bg-cont);
     border-radius: 1rem;
     margin-bottom: 20px;
-    
+
 }
-.inner-cont-3{
+
+.inner-cont-3 {
     width: 100%;
     height: 30%;
-    
+
     background: var(--bg-cont);
     border-radius: 1rem;
 
@@ -103,24 +104,23 @@
 
 
 
-.inner-cont1{
-    
-}
-.inner-cont2{
+.inner-cont1 {}
 
-}
-.inner-cont3{
-    
-}
+.inner-cont2 {}
+
+.inner-cont3 {}
 
 
-@media (max-width: 850px){
-    
+@media (max-width: 850px) {
+
     .single-page {
-        width: 99%;
+        width: 100%;
         height: 1400px;
-        padding-top: 20px;
+        width: 96%;
+        padding-top: 100px;
+
     }
+
     .full-info {
         width: 100%;
         height: 100%;
@@ -128,10 +128,7 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
     }
-    .single-page {
-        width: 95%;
-        padding-top: 100px;
-    }
+
     .basic-information {
         width: 98%;
         height: 10%;
@@ -148,15 +145,16 @@
         text-transform: uppercase;
         font-weight: bolder;
     }
+
     .full-info-cont1 {
         width: 98.5%;
         height: 100%;
         background: var(--nav-side);
         padding: 1rem;
         border-radius: 0.4rem;
-        
+
     }
-    
+
     .full-info-cont2 {
         width: 98.5%;
         height: 100%;
@@ -164,8 +162,9 @@
         padding: 1rem;
         border-radius: 0.4rem;
         margin-top: 20px;
-        
+
     }
+
     .inner-cont-1 {
         width: 95.7%;
         height: 30%;
@@ -176,7 +175,7 @@
         border-bottom-right-radius: 1rem;
         padding: 1rem;
         margin-bottom: 20px;
-       
+
     }
-    
+
 }
