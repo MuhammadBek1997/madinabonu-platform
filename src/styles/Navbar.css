@@ -6,10 +6,11 @@
    right: 0;
    display: flex;
    justify-content: flex-end;
-   padding-right: 0.5rem;
+   margin-right: 20px;
+   z-index: 500;
 }
 .navbar{
-   
+    
     height: 3rem;
     background: var(--nav-side);
     padding: 1rem;
@@ -19,7 +20,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: 35px;
-   
+    
 }
 
 /* Nav-btns ichidagi elementlar ham yonma-yon turishi uchun */
@@ -99,53 +100,76 @@
 
 
 @media (max-width: 850px) {
+    
 
-    .navbar {
-        width: 80.5%;
-        position: fixed;
-        height: fit-content;
-        background-color: var(--nav-side);
+    .navbar{
+        
+        min-width: 86.5% !important;
+        height: 3rem;
+        background: var(--nav-side);
         border: 1px solid var(--border-cont);
-        padding: 1rem;
+        padding:1rem;
         border-radius: 0.4rem;
         font-weight: bolder;
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        overflow-x: hidden;
+        font-size: 35px;
+        /* z-index: 1000; */
         
-       
     }
-
+    
+    .navbar-cont {
+        position: fixed;
+        width: 94.5vw;
+        height: 3rem;
+        top: 1%;
+       right: 0;
+       display: flex;
+       justify-content: flex-end;
+       margin-right: 30px;
+       z-index: 500;
+    }
     .sidebar-btn {
         display: inline;
         background-color: var(--nav-side);
-
+        
     }
-
-
-
+    
+    
+    
 }
 
 
 @media (max-width:500px) {
-    .navbar {
-        width: 100%;
-        position: fixed;
-        height: fit-content;
-        background-color: var(--nav-side);
+    .navbar{
+        height: 3rem;
+        background: var(--nav-side);
         border: 1px solid var(--border-cont);
-        padding: 1rem;
+        /* border: 1px solid red; */
+        padding:1rem;
         border-radius: 0.4rem;
         font-weight: bolder;
-        left: 0;
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        font-size: 35px;
+        
     }
-
+    
+    .navbar-cont {
+        position: fixed;
+        width: 102.5vw;
+        height: 3rem;
+        top: 1%;
+       right: 0;
+       display: flex;
+       justify-content: flex-end;
+       margin-right:15px;
+       /* padding-right:50px; */
+       z-index: 1000;
+    }
+    
     .sidebar-btn {
         display: inline;
     }

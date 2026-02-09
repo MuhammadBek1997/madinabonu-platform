@@ -4,7 +4,7 @@
      justify-content: center;
      align-items: center;
      gap: 30px;
-     margin-top: 20px;
+     margin-top: 100px;
      margin-right: 10px;
 
  }
@@ -24,66 +24,74 @@
  }
 
 
- .infos{
-    line-height: 40px;
-    font-weight: bolder;
+ .card-mobile{
+    display: none;
  }
 
- .inf{
-    color: var(--info);
-    font-size: 25px;
-    font-weight: normal;
+
+ .infos {
+     line-height: 40px;
+     font-weight: bolder;
+ }
+
+ .inf {
+     color: var(--info);
+     font-size: 25px;
+     font-weight: normal;
 
  }
 
-.short-info{
-    width: 60%;
-    height: 92%;
-   background: var(--bg-cont);
-   border-radius: 1rem;
-   padding: 1rem;
-   display: inline;
-}
-.extra{
-    width: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 10px;
-    border-radius: 0.8rem;
-    margin-top: 10px;
-    padding: 0.5rem;
-    background-color: var(--nav-side);
-    padding-left: 1rem;
-    
-}
-.filial{
-    top: 0;
-    font-size: 22px;
-    line-height: 30px;
-    flex: 1;
-    height: fit-content;
-    background-color: var(--nav-side);
-    padding: 1rem;
-    border-radius: 1.5rem;
-}
-.days{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 8px;
-}
+ .short-info {
+     width: 60%;
+     height: 92%;
+     background: var(--bg-cont);
+     border-radius: 1rem;
+     padding: 1rem;
+     display: inline;
+ }
+
+ .extra {
+     width: 95%;
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     gap: 10px;
+     border-radius: 0.8rem;
+     margin-top: 10px;
+     padding: 0.5rem;
+     background-color: var(--nav-side);
+     padding-left: 1rem;
+
+ }
+
+ .filial {
+     top: 0;
+     font-size: 22px;
+     line-height: 30px;
+     flex: 1;
+     height: fit-content;
+     background-color: var(--nav-side);
+     padding: 1rem;
+     border-radius: 1.5rem;
+ }
+
+ .days {
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     gap: 8px;
+ }
 
 
 
-.lesson-days{
-  
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 20px;
-}
+ .lesson-days {
+
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     gap: 20px;
+ }
 
 
 
@@ -121,20 +129,20 @@
      height: 99%;
      overflow: hidden;
      border-radius: 1rem;
-    
+
  }
- 
+
  .pictures {
      width: 400px;
      height: 420px;
      margin-left: -15%;
      border-radius: 0.4rem;
-     
- }
- 
 
- 
- 
+ }
+
+
+
+
  @media (max-width:850px) {
      .course-list {
          display: grid;
@@ -142,63 +150,68 @@
          justify-content: start;
          align-items: center;
          margin-top: 100px;
+
+     }
+
+     .card {
+         position: relative;
+         width: 86.5%;
+         height: fit-content;
+         transform-style: preserve-3d;
+         border-radius: 15px;
+         overflow-x: hidden;
+     }
+     
+     section {
+         padding-left: 5.5rem !important;
+        }
+        
+        
+        .picture-cont {
+         width: 350px;
+         height: 90%;
+         overflow: hidden;
+         border-radius: 1rem;
          
         }
-        .card {
-            position: relative;
-            width: 90%;
-            height: fit-content;
-            transform-style: preserve-3d;
-            border-radius: 15px;
-        }
-     section {
-         padding-left: 6rem !important;
-        }
-        
-        
-         .picture-cont {
-             width: 350px;
-             height: 90%;
-             overflow: hidden;
-             border-radius: 1rem;
-            
-         }
     }
     
     @media (max-width:500px) {
         .course-list {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-         justify-content: center;
-         align-items: center;
-         gap: 50px;
-         padding: 0,2rem;
-         overflow-x: hidden;
-         
-         
-     }
-
-
-     .pictures {
-         width: 20px;
-         height: 310px;
-         border-top-left-radius: 0.4rem;
-         border-top-right-radius: 0.4rem;
-
-     }
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 0.5rem;
+            overflow-x: hidden !important;
+            margin-top: 50px !important;
+        }
+        .card-mobile {
+            width: 10vw;
+            border: 1px solid red;
+           background-image: url("img/biologiya.png") ;
+           background-size: cover;      
+           background-repeat: no-repeat;
+           background-position: center; 
+         }
+        
+        .card {
+        display: none;
+        }
 
      section {
          padding-left: 0 !important;
      }
-    
-     .short-info{
-        width: 400px;
-       background: var(--bg-cont);
-       border-radius: 1.5rem;
-       padding: 1rem;
-       display: none;
-    }
-    
+
+     .short-info {
+         width: 400px;
+         background: var(--bg-cont);
+         border-radius: 1.5rem;
+         padding: 1rem;
+         display: none;
+     }
+
 
 
  }
