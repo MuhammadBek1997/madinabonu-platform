@@ -8,7 +8,6 @@
      margin-right: 10px;
 
  }
-
  .card {
      position: relative;
      height: 420px;
@@ -188,6 +187,7 @@
             margin-top: 30px !important;
         }
         .card-mobile {
+            position: relative;
             width: 95%;
             height: 100vw;
             border-radius: 1rem;
@@ -199,13 +199,14 @@
          }
 
          .card-mobile .dataToggle{
-
+position: absolute;
+bottom: 0;
          }
-        .container-cards{
+        /* .container-cards{
             width: 500px;
             padding: 1rem;
 
-        }
+        } */
         .card {
         display: none;
         }
