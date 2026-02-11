@@ -8,6 +8,7 @@
      margin-right: 10px;
 
  }
+
  .card {
      position: relative;
      height: 420px;
@@ -23,8 +24,8 @@
  }
 
 
- .card-mobile{
-    display: none;
+ .card-mobile {
+     display: none;
  }
 
 
@@ -154,62 +155,72 @@
 
      .card {
          position: relative;
-         width: 90.5%;
+         width: 85%;
          height: fit-content;
          transform-style: preserve-3d;
          border-radius: 15px;
          overflow-x: hidden;
      }
-     
+
      section {
          padding-left: 5.5rem !important;
-        }
-        
-        
-        .picture-cont {
-         width: 350px;
-         height: 90%;
+     }
+     .short-info {
+        width:60%;
+        background: var(--bg-cont);
+        border-radius: 1.5rem;
+        padding: 1rem;
+      
+    }
+
+     .picture-cont {
+         width: 35%;
+         height: 87%;
          overflow: hidden;
          border-radius: 1rem;
-         
-        }
+
+     }
+     .pictures {
+        width: 400px;
+        height: 405px;
+        margin-left: -33%;
+        border-radius: 0.4rem;
+   
     }
-    
-    @media (max-width:500px) {
-        .course-list {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            padding: 0.5rem;
-            overflow-x: hidden !important;
-            margin-top: 30px !important;
-        }
-        .card-mobile {
-            position: relative;
-            width: 95%;
-            height: 100vw;
-            border-radius: 1rem;
-            /* border: 1px solid red; */
-            display: block;
-            background-size: cover; 
-            background-position: center;
-            margin-left: 15px;
-         }
+   
+ }
 
-         .card-mobile .dataToggle{
-position: absolute;
-bottom: 0;
-         }
-        /* .container-cards{
-            width: 500px;
-            padding: 1rem;
+ @media (max-width:500px) {
+     .course-list {
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+         padding: 0.5rem;
+         overflow-x: hidden !important;
+         margin-top: 30px !important;
+     }
 
-        } */
-        .card {
-        display: none;
-        }
+     .card-mobile {
+         position: relative;
+         width: 103%;
+         height: 100vw;
+         border-radius: 1rem;
+         display: block;
+         background-size: cover;
+         background-position: center;
+         margin-left: 1px;
+     }
+
+     .card-mobile .dataToggle {
+         position: absolute;
+         bottom: 0;
+     }
+
+     .card {
+         display: none;
+     }
 
      section {
          padding-left: 0 !important;
