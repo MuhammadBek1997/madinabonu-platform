@@ -1,5 +1,5 @@
 
-import { ChevronDown, ChevronUp } from 'lucide-react'
+import { ChevronDown, ChevronUp, MoreVertical } from 'lucide-react'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useGlobalContext } from '../Context'
@@ -10,29 +10,24 @@ const StudentCard = ({ achievements, GroupPhotos, WorkExperience, students, Abou
 
     const [cardButton, setCardButton] = useState(false)
 
-    return (<tr>
- 
+    return (
+    <tr className='laptop'>
+
         <td>  <img src={img} alt="" className='avatars' /> </td>
-        <td>
+        <td className='student-name'>
             <div class="student-info">
-                Sophia Wilson
+                Sophia Wilson <div className="vertical1"> <MoreVertical/> </div> 
             </div>
         </td>
-        <td>522bcs009</td>
-        <td>{name}</td>
+        <td>  <div className="name-more"> 522bcs009  <div className="vertical2"> <MoreVertical/> </div> </div>    </td>
+        <td className='teacherName'>{name}   </td>
         <td> <button className='student-single'>Batafsil</button></td>
+        
+      
 
-
-
-
-
-
-
-        {/* </div> */}
-
-
-        {/* </div> */}
     </tr>
+    
+    
     )
 }
 

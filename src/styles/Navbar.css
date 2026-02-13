@@ -127,7 +127,7 @@
        right: 0;
        display: flex;
        justify-content: flex-end;
-       margin-right: 7px;
+       margin-right: 10px;
        z-index: 500;
     }
     .sidebar-btn {
@@ -159,13 +159,13 @@
     
     .navbar-cont {
         position: fixed;
-        width: 104.5vw;
+        width: 106vw;
         height: 3rem;
         top: 1%;
        right: 0;
        display: flex;
        justify-content: flex-end;
-       margin-right:10px;
+       margin-right:5px;
        /* padding-right:50px; */
        z-index: 1000;
     }

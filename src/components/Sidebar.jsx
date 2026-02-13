@@ -27,7 +27,7 @@ const Sidebar = () => {
           <img src={`/images/home${theme}.png`} alt="" className='sidebar-icon1' />
          {sToggle ? "" : " Bosh sahifa "}
         </Link>
-        <Link to={'/topStudents'} className='menu'>
+        <Link to={'/coursespage'} className='menu'>
           <img src={`/images/courses${theme}.png`} alt="" className='sidebar-icon1' />
          {sToggle ? "" : " Kurslar "}
         </Link>

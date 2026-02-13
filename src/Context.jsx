@@ -10,7 +10,7 @@ const AppProvider = ({ children }) => {
     const [name, setName] = useState('')
     const [surname, setSurname] = useState('')
     const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")) || {})
-    const [sToggle, setsToggle] = useState('')
+    const [sToggle, setsToggle] = useState(true)
 
 
     const [theme, setTheme] = useState(() => {
@@ -79,7 +79,7 @@ const AppProvider = ({ children }) => {
             AboutTeacher: "Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
         },
         {
-            id:4,
+            id: 4,
             img: "/images/foto2.png",
             name: "Teacher Name",
             subject: "Subject Name",
@@ -91,7 +91,7 @@ const AppProvider = ({ children }) => {
             AboutTeacher: "Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
         },
         {
-            id:5,
+            id: 5,
             img: "/images/foto3.png",
             name: "Teacher Name",
             subject: "Subject Name",
@@ -103,7 +103,7 @@ const AppProvider = ({ children }) => {
             AboutTeacher: "Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
         },
         {
-            id:6,
+            id: 6,
             img: "/images/foto4.png",
             name: "Teacher Name",
             subject: "Subject Name",
@@ -115,7 +115,7 @@ const AppProvider = ({ children }) => {
             AboutTeacher: "Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
         },
         {
-            id:7,
+            id: 7,
             img: "/images/foto5.png",
             name: "Teacher Name",
             subject: "Subject Name",
@@ -127,7 +127,7 @@ const AppProvider = ({ children }) => {
             AboutTeacher: "Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
         },
         {
-            id:8,
+            id: 8,
             img: "/images/rohila.png",
             name: "Teacher Name",
             subject: "Subject Name",
@@ -139,7 +139,7 @@ const AppProvider = ({ children }) => {
             AboutTeacher: "Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
         },
         {
-            id:9,
+            id: 9,
             img: "/images/otabek.png",
             name: "Teacher Name",
             subject: "Subject Name",
@@ -151,7 +151,7 @@ const AppProvider = ({ children }) => {
             AboutTeacher: "Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
         },
         {
-            id:10,
+            id: 10,
             img: "/images/kimyo.png",
             name: "Teacher Name",
             subject: "Subject Name",
@@ -163,7 +163,7 @@ const AppProvider = ({ children }) => {
             AboutTeacher: "Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
         },
         {
-            id:11,
+            id: 11,
             img: "/images/huquq.png",
             name: "Teacher Name",
             subject: "Subject Name",
@@ -175,7 +175,7 @@ const AppProvider = ({ children }) => {
             AboutTeacher: "Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
         },
         {
-            id:12,
+            id: 12,
             img: "/images/husniddin.png",
             name: "Teacher Name",
             subject: "Subject Name",
@@ -187,7 +187,7 @@ const AppProvider = ({ children }) => {
             AboutTeacher: "Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
         },
         {
-            id:13,
+            id: 13,
             img: "/images/sardoraka.png",
             name: "Teacher Name",
             subject: "Subject Name",
@@ -199,7 +199,7 @@ const AppProvider = ({ children }) => {
             AboutTeacher: "Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
         },
         {
-            id:14,
+            id: 14,
             img: "/images/matematika.png",
             name: "Teacher Name",
             subject: "Subject Name",
@@ -211,7 +211,7 @@ const AppProvider = ({ children }) => {
             AboutTeacher: "Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
         },
         {
-            id:15,
+            id: 15,
             img: "/images/zuxraopa.png",
             name: "Teacher Name",
             subject: "Subject Name",
@@ -223,7 +223,7 @@ const AppProvider = ({ children }) => {
             AboutTeacher: "Dedicated educator committed to student success. Helped [Number] students achieve their goals through innovative teaching methods."
         },
         {
-            id:16,
+            id: 16,
             img: "/images/biologiya.png",
             name: "Teacher Name",
             subject: "Subject Name",
@@ -247,10 +247,10 @@ const AppProvider = ({ children }) => {
 
     return (
         <AppContext.Provider value={{
-           courses,
+            courses,
             setsToggle, sToggle,
             openTheme, setOpenTheme, handleChangeTheme, theme, saveInfo,
-            user, surname, setName, setSurname, setTheme, 
+            user, surname, setName, setSurname, setTheme,
         }}>
             {children}
         </AppContext.Provider>

@@ -8,6 +8,7 @@ import Teachers from './pages/Teachers'
 import TopStudents from './pages/TopStudents'
 import SingleTeachers from './components/SingleTeachers'
 import { useGlobalContext } from './Context'
+import Courses from './pages/Courses'
 
 function App() {
   
@@ -32,6 +33,7 @@ function App() {
         <Route path='/teachers' element={<Teachers/>} />
         <Route path='/topStudents' element={<TopStudents/>} />
         <Route path='/teachersSingle/:id' element={<SingleTeachers/>} />
+        <Route path='/coursespage' element={<Courses/>}/>
       </Routes>
       </section>
     </div>
@@ -41,25 +43,3 @@ function App() {
 export default App
 
 
-
-// home qismi ichi
-// openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} user={user} name={name}
-//  surname={surname} setName={setName} setSurname={setSurname} setTheme={setTheme} theme={theme} saveInfo={saveInfo}
-
-
-// teachers qismi ichi
-// courses={courses} setsToggle={setsToggle} sToggle={sToggle} 
-
-
-// top students ichi
-// courses={courses}  
-
-
-// navbarni ichi
-// theme={theme} openTheme={openTheme} setOpenTheme={setOpenTheme} handleChangeTheme={handleChangeTheme} setsToggle={setsToggle}
-//  sToggle={sToggle}
-
-
-
-// sidebar ichi
-// setsToggle={setsToggle} sToggle={sToggle} theme={theme}

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import '../styles/Students.css'
 import StudentCard from '../components/StudentCard'
 import { useGlobalContext } from '../Context'
+import { MoreHorizontal } from 'lucide-react'
 
 const TopStudents = () => {
 
@@ -11,13 +12,14 @@ const TopStudents = () => {
     <div className='students'>
       <div className="students-cont">
       <table className="students-table">
-        <thead className='head-part'>
+        <thead>
           <tr>
-            <th>Avatar</th>
-            <th>Familiya</th>
-            <th>Ism</th>
-            <th>O'qituvchi</th>
-            <th>Batafsil</th>
+            <th><div className="inner-th-first">Avatar</div></th>
+            <th> <div className="inner-th">Ism</div></th>
+            <th> <div id='last-for-mobile' className="inner-th">Familia</div></th>
+            <th> <div id='inner-th' className="inner-th">O'qituvchi</div></th>
+            <th id='last-child'> <div className="inner-th-last">Batafsil</div></th>
+        
           </tr>
         </thead>
 
@@ -27,11 +29,11 @@ const TopStudents = () => {
               return <StudentCard key={index} {...item} />
             })
           }
-          <div class="pagination">
+          {/* <div class="pagination">
             <div>Previous</div>
             <div>Page 1 of 12</div>
             <div>Next</div>
-          </div>
+          </div> */}
 
         </tbody>
       </table>
