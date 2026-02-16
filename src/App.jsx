@@ -9,6 +9,7 @@ import TopStudents from './pages/TopStudents'
 import SingleTeachers from './components/SingleTeachers'
 import { useGlobalContext } from './Context'
 import Courses from './pages/Courses'
+import SingleStudents from './components/SingleStudents'
 
 function App() {
   
@@ -33,6 +34,7 @@ function App() {
         <Route path='/teachers' element={<Teachers/>} />
         <Route path='/topStudents' element={<TopStudents/>} />
         <Route path='/teachersSingle/:id' element={<SingleTeachers/>} />
+        <Route path='/studentsSingle/:id' element={<SingleStudents/>} />
         <Route path='/coursespage' element={<Courses/>}/>
       </Routes>
       </section>

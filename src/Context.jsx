@@ -44,7 +44,7 @@ const AppProvider = ({ children }) => {
         {
             id: 1,
             img: "/images/fotoTeacher.png",
-            name: "Rahmonberdiev G'iyos",
+            name: "Rahmonberdiev ",
             subject: "Fizika",
             courses: " 12soat",
             achievements: "  Hali mavjud emas",

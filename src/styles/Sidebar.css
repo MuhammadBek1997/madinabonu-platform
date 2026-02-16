@@ -183,9 +183,38 @@
     .sidebarBtn{
         display: none;
     }
-    /* .sidebar .toggle{
-        display: flex;
-    } */
+    
+    .sidebar .toggle{
+        display: none;
+    }
+   
+}
+@media (max-width:425px) {
+    .sidebar {
+        width: 210px;
+        height: 100vh;
+        position: fixed;
+        background-color: var(--nav-side);
+        border: 1px solid var(--border-cont);
+        padding-top: 100px;
+        top: 1%;
+        border-radius: 0.4rem;
+        transform: translateX(0);
+        transition: 500ms;
+    }
+    
+    .sidebar-open{
+        transform:translateX(-100%) ;
+        background-color: var(--nav-side);
+    }
+    .tag{
+        color: grey;
+        display: none;
+    }
+    
+    .sidebarBtn{
+        display: none;
+    }
     
     .sidebar .toggle{
         display: none;

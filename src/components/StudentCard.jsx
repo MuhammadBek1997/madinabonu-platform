@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useGlobalContext } from '../Context'
 
-const StudentCard = ({ achievements, GroupPhotos, WorkExperience, students, AboutTeacher, img, name }) => {
+const StudentCard = ({id, achievements, GroupPhotos, WorkExperience, students, AboutTeacher, img, name }) => {
 
     let { courses } = useGlobalContext()
 
@@ -21,7 +21,10 @@ const StudentCard = ({ achievements, GroupPhotos, WorkExperience, students, Abou
         </td>
         <td>  <div className="name-more"> 522bcs009  <div className="vertical2"> <MoreVertical/> </div> </div>    </td>
         <td className='teacherName'>{name}   </td>
-        <td> <button className='student-single'>Batafsil</button></td>
+
+
+       <td> <Link to={`/studentsSingle/${id}`}><button className='student-single'>Batafsil</button> </Link></td>
+        {/* <td> <button className='student-single'>Batafsil</button></td> */}
         
       
 

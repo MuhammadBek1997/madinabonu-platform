@@ -141,7 +141,104 @@
  }
 
 
+ @media (max-width:1440px) {
+    .container-cards{
+        width: 40vw;
+    }
+    .course-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: start;
+        align-items: center;
+        margin-top: 100px;
 
+    }
+
+    .card {
+        position: relative;
+        width: 110%;
+        height: fit-content;
+        transform-style: preserve-3d;
+        border-radius: 15px;
+        overflow-x: hidden;
+    }
+
+    section {
+        /* padding-left: 5.5rem !important; */
+    }
+    .short-info {
+       width:60%;
+       background: var(--bg-cont);
+       border-radius: 1.5rem;
+       padding: 1rem;
+     
+   }
+
+    .picture-cont {
+        width: 35%;
+        height: 87%;
+        overflow: hidden;
+        border-radius: 1rem;
+
+    }
+    .pictures {
+       width: 400px;
+       height: 405px;
+       margin-left: -33%;
+       border-radius: 0.4rem;
+  
+   }
+  
+}
+ @media (max-width:1024px) {
+    .container-cards{
+        width: 81vw;
+    }
+    .course-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: start;
+        align-items: center;
+        margin-top: 100px;
+
+    }
+
+    .card {
+        position: relative;
+        width: 110%;
+        height: fit-content;
+        transform-style: preserve-3d;
+        border-radius: 15px;
+        overflow-x: hidden;
+    }
+
+    section {
+        /* padding-left: 5.5rem !important; */
+    }
+    .short-info {
+       width:60%;
+       background: var(--bg-cont);
+       border-radius: 1.5rem;
+       padding: 1rem;
+     
+   }
+
+    .picture-cont {
+        width: 35%;
+        height: 87%;
+        overflow: hidden;
+        border-radius: 1rem;
+
+    }
+    .pictures {
+       width: 400px;
+       height: 405px;
+       margin-left: -33%;
+       border-radius: 0.4rem;
+  
+   }
+  
+}
 
  @media (max-width:850px) {
      .course-list {
@@ -156,6 +253,52 @@
      .card {
          position: relative;
          width: 85%;
+         height: fit-content;
+         transform-style: preserve-3d;
+         border-radius: 15px;
+         overflow-x: hidden;
+     }
+
+     section {
+         padding-left: 5.5rem !important;
+     }
+     .short-info {
+        width:60%;
+        background: var(--bg-cont);
+        border-radius: 1.5rem;
+        padding: 1rem;
+      
+    }
+
+     .picture-cont {
+         width: 35%;
+         height: 87%;
+         overflow: hidden;
+         border-radius: 1rem;
+
+     }
+     .pictures {
+        width: 400px;
+        height: 405px;
+        margin-left: -33%;
+        border-radius: 0.4rem;
+   
+    }
+   
+ }
+ @media (max-width:768px) {
+     .course-list {
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         justify-content: start;
+         align-items: center;
+         margin-top: 100px;
+
+     }
+
+     .card {
+         position: relative;
+         width: 103%;
          height: fit-content;
          transform-style: preserve-3d;
          border-radius: 15px;
@@ -204,7 +347,7 @@
 
      .card-mobile {
          position: relative;
-         width: 103%;
+         width: 118%;
          height: 100vw;
          border-radius: 1rem;
          display: block;
