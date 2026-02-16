@@ -11,7 +11,7 @@ const SingleTeachers = ({ img }) => {
   console.log(teacherId.id)
 
   return (
-    
+
     <div className='single-page' >
 
       <div className="full-info">
@@ -20,14 +20,13 @@ const SingleTeachers = ({ img }) => {
             O'qituvchi haqida
           </div>
           <div className="inner-cont-1">
-          <div className="for-picture">
+            <div className="for-picture">
 
-          </div>
-          <div className="for-short-inf">
+            </div>
+            <div className="for-short-inf">
 
+            </div>
           </div>
-          </div>
-        
         </div>
         <div className="full-info-cont2">
           <div className="inner-cont1">
@@ -37,7 +36,7 @@ const SingleTeachers = ({ img }) => {
 
           </div>
           <div className="inner-cont3">
-      <Link to={`/teachers`}> Back </Link>
+            <Link to={`/teachers`}> Back </Link>
 
           </div>
 
