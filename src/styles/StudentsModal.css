@@ -33,7 +33,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: red;
+    background:none;
+    border: 3px solid var(--toggle-color);
     padding: 30px;
     border-radius: 10px;
     z-index: 1000;

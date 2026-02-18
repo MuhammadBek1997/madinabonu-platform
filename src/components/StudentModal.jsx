@@ -11,7 +11,7 @@ const StudentModal = ({setShowStudent,img,namestud,subjects,projects,students}) 
   return (
     <div className="modalOverlay">
     <div className="modalContent">
-      <button onClick={handleClose}>Orqaga</button>
+      <button className='student-single' onClick={handleClose}>Orqaga</button>
 
       <img src={img} alt="" />
       <h2>{namestud}</h2>
