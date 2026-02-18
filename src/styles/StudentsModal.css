@@ -1,4 +1,4 @@
-.modalOverlay {
+/* .modalOverlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -8,11 +8,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  } */
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Background blur */
+    backdrop-filter: blur(5px); /* bu blur effekt beradi */
+    background-color: rgba(0, 0, 0, 0.4); /* biroz qorong‘i qatlam */
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
   }
   
+  
   .modalContent {
-    background: white;
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
     padding: 30px;
     border-radius: 10px;
+    z-index: 1000;
   }
   

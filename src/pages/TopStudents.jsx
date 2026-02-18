@@ -7,43 +7,58 @@ import StudentModal from '../components/StudentModal'
 
 const TopStudents = () => {
 
-  let { courses, setsToggle, sToggle,students } = useGlobalContext()
+  let { courses, setsToggle, sToggle, students } = useGlobalContext()
 
-  const [showStudent,setShowStudent] = useState(false)
-  const [student,setStudent] = useState({})
+  const [showStudent, setShowStudent] = useState(false)
+  const [student, setStudent] = useState({})
+
+
+
 
   return (
+
     <div className='students'>
       <div className="students-cont">
-      <table className="students-table">
-        <thead>
-          <tr>
-            <th><div className="inner-th-first">Avatar</div></th>
-            <th> <div className="inner-th">Ism</div></th>
-            <th> <div id='last-for-mobile' className="inner-th">Familia</div></th>
-            <th> <div id='inner-th' className="inner-th">O'qituvchi</div></th>
-            <th id='last-child'> <div className="inner-th-last">Batafsil</div></th>
-        
-          </tr>
-        </thead>
+        <table className="students-table">
+          <thead>
+            <tr>
+              <th><div className="inner-th-first">Avatar</div></th>
+              <th> <div className="inner-th">Ism</div></th>
+              <th> <div id='last-for-mobile' className="inner-th">Familia</div></th>
+              <th> <div id='inner-th' className="inner-th">O'qituvchi</div></th>
+              <th id='last-child'> <div className="inner-th-last">Batafsil</div></th>
 
-        <tbody>
-          {
-            students.map((item, index) => {
-              return <StudentCard key={index} {...item}  setShowStudent={setShowStudent}
-              setStudent={setStudent}  />
-            })
-          }
-          {/* <div class="pagination">
+            </tr>
+          </thead>
+
+          <tbody>
+            {
+              students.map((item, index) => {
+                return <StudentCard key={index} setShowStudent={setShowStudent}
+                  setStudent={setStudent} {...item} />
+              })
+            }
+            {/* <div class="pagination">
             <div>Previous</div>
             <div>Page 1 of 12</div>
             <div>Next</div>
           </div> */}
 
-        </tbody>
-      </table>
+          </tbody>
+        </table>
 
-      {showStudent ? <StudentModal {...students}/>:null}
+
+        {showStudent && (
+          <StudentModal
+            setShowStudent={setShowStudent}
+            img={student?.img}
+            namestud={student?.namestud}
+            subjects={student?.subjects}
+            projects={student?.projects}
+          />
+        )}
+
+        {/* {showStudent ? <StudentModal {...students} /> : null} */}
       </div>
     </div>
 

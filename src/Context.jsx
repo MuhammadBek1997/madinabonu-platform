@@ -246,42 +246,42 @@ const AppProvider = ({ children }) => {
             id: 1,
             img: "/images/fotoTeacher.png",
             namestud: "Rahmonberdiev ",
-            subject: "Fizika",
+            subjects: "Fizika",
             projects: "lalala"
         },
         {
             id: 2,
             img: "/images/fotoTeacher.png",
             namestud: "Rahmonberdiev ",
-            subject: "Fizika",
+            subjects: "Fizika",
             projects: "lalala"
         },
         {
             id: 3,
             img: "/images/fotoTeacher.png",
             namestud: "Rahmonberdiev ",
-            subject: "Fizika",
+            subjects: "Fizika",
             projects: "lalala"
         },
         {
             id: 4,
             img: "/images/fotoTeacher.png",
             namestud: "Rahmonberdiev ",
-            subject: "Fizika",
+            subjects: "Fizika",
             projects: "lalala"
         },
         {
             id: 5,
             img: "/images/fotoTeacher.png",
             namestud: "Rahmonberdiev ",
-            subject: "Fizika",
+            subjects: "Fizika",
             projects: "lalala"
         },
         {
             id: 6,
             img: "/images/fotoTeacher.png",
             namestud: "Rahmonberdiev ",
-            subject: "Fizika",
+            subjects: "Fizika",
             projects: "lalala"
         },
 

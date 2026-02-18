@@ -32,7 +32,7 @@ const StudentCard = ({ id, achievements, GroupPhotos, WorkExperience, students, 
             <td>  <div className="name-more"> 522bcs009  <div className="vertical2"> <MoreVertical /> </div> </div>    </td>
             <td className='teacherName'>{name}   </td>
 
-            <button className='student-single'>
+            <button className='student-single' onClick={()=>handleShowStudent()}>
                 Batafsil
             </button>
 

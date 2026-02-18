@@ -17,8 +17,6 @@ function App() {
 
 
  
-    
-   
 
   
 
@@ -31,7 +29,7 @@ function App() {
         paddingLeft:!sToggle ? "265px":"70px"
       }}>
 
-     
+   
       <Navbar  />
       <Routes>
         <Route path='/' element={<Home/>} />

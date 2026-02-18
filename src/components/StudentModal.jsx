@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/StudentsModal.css'
 
-const StudentModal = () => {
+const StudentModal = ({setShowStudent,img,namestud,subjects,projects,students}) => {
 
     const handleClose = () => {
         setShowStudent(false)
@@ -13,9 +13,12 @@ const StudentModal = () => {
     <div className="modalContent">
       <button onClick={handleClose}>Orqaga</button>
 
-      <img src={student.img} alt="" />
-      <h2>{student.name}</h2>
-      <p>{student.subject}</p>
+      <img src={img} alt="" />
+      <h2>{namestud}</h2>
+      <p>{subjects}</p>
+      <p>
+        {projects}
+      </p>
     </div>
   </div>
   )
