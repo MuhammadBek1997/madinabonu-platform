@@ -3,10 +3,14 @@ import '../styles/Students.css'
 import StudentCard from '../components/StudentCard'
 import { useGlobalContext } from '../Context'
 import { MoreHorizontal } from 'lucide-react'
+import StudentModal from '../components/StudentModal'
 
 const TopStudents = () => {
 
-  let { courses, setsToggle, sToggle } = useGlobalContext()
+  let { courses, setsToggle, sToggle,students } = useGlobalContext()
+
+  const [showStudent,setShowStudent] = useState(false)
+  const [student,setStudent] = useState({})
 
   return (
     <div className='students'>
@@ -25,8 +29,9 @@ const TopStudents = () => {
 
         <tbody>
           {
-            courses.map((item, index) => {
-              return <StudentCard key={index} {...item} />
+            students.map((item, index) => {
+              return <StudentCard key={index} {...item}  setShowStudent={setShowStudent}
+              setStudent={setStudent}  />
             })
           }
           {/* <div class="pagination">
@@ -37,6 +42,8 @@ const TopStudents = () => {
 
         </tbody>
       </table>
+
+      {showStudent ? <StudentModal {...students}/>:null}
       </div>
     </div>
 

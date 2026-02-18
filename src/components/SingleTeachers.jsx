@@ -27,6 +27,11 @@ const SingleTeachers = ({ img }) => {
 
             </div>
           </div>
+          <div className="mobile-short-inf">
+            <div className="m-short-inf">
+              
+            </div>
+          </div>
         </div>
         <div className="full-info-cont2">
           <div className="inner-cont1">

@@ -16,6 +16,10 @@ function App() {
   let {theme,login,sToggle} = useGlobalContext()
 
 
+ 
+    
+   
+
   
 
   document.getElementById("root").parentElement.setAttribute("data-theme",theme)

@@ -241,13 +241,60 @@ const AppProvider = ({ children }) => {
     ];
 
 
+    let students = [
+        {
+            id: 1,
+            img: "/images/fotoTeacher.png",
+            namestud: "Rahmonberdiev ",
+            subject: "Fizika",
+            projects: "lalala"
+        },
+        {
+            id: 2,
+            img: "/images/fotoTeacher.png",
+            namestud: "Rahmonberdiev ",
+            subject: "Fizika",
+            projects: "lalala"
+        },
+        {
+            id: 3,
+            img: "/images/fotoTeacher.png",
+            namestud: "Rahmonberdiev ",
+            subject: "Fizika",
+            projects: "lalala"
+        },
+        {
+            id: 4,
+            img: "/images/fotoTeacher.png",
+            namestud: "Rahmonberdiev ",
+            subject: "Fizika",
+            projects: "lalala"
+        },
+        {
+            id: 5,
+            img: "/images/fotoTeacher.png",
+            namestud: "Rahmonberdiev ",
+            subject: "Fizika",
+            projects: "lalala"
+        },
+        {
+            id: 6,
+            img: "/images/fotoTeacher.png",
+            namestud: "Rahmonberdiev ",
+            subject: "Fizika",
+            projects: "lalala"
+        },
+
+    ]
+
+
 
 
 
 
     return (
         <AppContext.Provider value={{
-            courses,
+            courses,students,
             setsToggle, sToggle,
             openTheme, setOpenTheme, handleChangeTheme, theme, saveInfo,
             user, surname, setName, setSurname, setTheme,
