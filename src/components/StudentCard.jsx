@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useGlobalContext } from '../Context'
 
-const StudentCard = ({ id, achievements, GroupPhotos, WorkExperience, students, AboutTeacher, img, namestud, setStudent, setShowStudent,projects,subjects }) => {
+const StudentCard = ({ id, achievements, GroupPhotos, WorkExperience, students, AboutTeacher, imgstud, namestud,teacher, setStudent, setShowStudent, projects, subjects, name }) => {
 
     let { courses } = useGlobalContext()
 
@@ -15,7 +15,8 @@ const StudentCard = ({ id, achievements, GroupPhotos, WorkExperience, students, 
             id: id,
             namestud: namestud,
             subjects: subjects,
-            projects: projects
+            projects: projects,
+            teacher:teacher
         })
         setShowStudent(true)
     }
@@ -23,22 +24,20 @@ const StudentCard = ({ id, achievements, GroupPhotos, WorkExperience, students, 
     return (
         <tr className='laptop'>
 
-            <td>  <img src={img} alt="" className='avatars' /> </td>
+            <td>  <img src={imgstud} alt="" className='avatars' /> </td>
             <td className='student-name'>
                 <div class="student-info">
-                    Sophia Wilson <div className="vertical1"> <MoreVertical /> </div>
+                   {namestud}  <button className='vertical1' onClick={() => handleShowStudent()}> <MoreVertical /> </button>
                 </div>
             </td>
-            <td>  <div className="name-more"> 522bcs009  <div className="vertical2"> <MoreVertical /> </div> </div>    </td>
-            <td className='teacherName'>{name}   </td>
+            <td>  <div className="name-more"> {subjects} <button className='vertical2' onClick={() => handleShowStudent()}> <MoreVertical /> </button>  </div>    </td>
+            <td className='teacherName'>{teacher}   </td>
+            <td className='button-td'>
+                <button className='student-single' onClick={() => handleShowStudent()}>
+                    Batafsil
+                </button>
+            </td>
 
-            <button className='student-single' onClick={()=>handleShowStudent()}>
-                Batafsil
-            </button>
-
-
-            {/* <td> <Link to={`/studentsSingle/${id}`}><button className='student-single'>Batafsil</button> </Link></td> */}
-            {/* <td> <button className='student-single'>Batafsil</button></td> */}
 
 
 

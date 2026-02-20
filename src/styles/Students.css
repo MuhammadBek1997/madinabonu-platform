@@ -4,15 +4,19 @@
   margin-top: 100px;
   background-color: var(--nav-side);
   border-radius: 0.4rem;
+  
 }
 
 .students-cont {
   background-color: var(--bg-cont);
   border-radius: 1rem;
   padding: 1rem;
+  max-height: 800px;   
+  overflow-y: auto;
 
 
 }
+
 
 .students-card {
   width: 97.5%;
@@ -72,6 +76,7 @@
 .student-info {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   
 }
 
@@ -107,7 +112,12 @@
   display: none;
 }
 
+.button-td{
 
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
 
 @media(max-width:1440px){
   .students {
@@ -163,7 +173,7 @@
 .name-more {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 
@@ -209,6 +219,9 @@
     background: var(--toggle-color);
   }
 .vertical2{
+  background: none;
+  border: none;
+  color: var(--toggle-color);
   display: flex;
 }
  
@@ -227,12 +240,26 @@
 
   #last-for-mobile {
     padding: 1rem;
-    width: 87%;
+    width: 70%;
     border-top-right-radius: 1rem;
     background: var(--toggle-color);
   }
   .vertical2{
     display: flex;
+  }
+  .student-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .students-cont {
+    /* background-color: var(--bg-cont);
+    border-radius: 1rem;
+    padding: 1rem; */
+    max-height: 400px;   
+    overflow-y: auto;
+  
+  
   }
   
 }
@@ -283,6 +310,9 @@
     background: var(--toggle-color);
   }
   .vertical1{
+    background: none;
+    border: none;
+    color: var(--toggle-color);
     display: flex;
   }
   

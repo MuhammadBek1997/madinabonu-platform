@@ -25,3 +25,7 @@ const StudentModal = ({setShowStudent,img,namestud,subjects,projects,students}) 
 }
 
 export default StudentModal
+
+
+
+

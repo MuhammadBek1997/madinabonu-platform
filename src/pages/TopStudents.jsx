@@ -20,7 +20,7 @@ const TopStudents = () => {
     <div className='students'>
       <div className="students-cont">
         <table className="students-table">
-          <thead>
+          <thead className='table-head'>
             <tr>
               <th><div className="inner-th-first">Avatar</div></th>
               <th> <div className="inner-th">Ism</div></th>
@@ -38,11 +38,7 @@ const TopStudents = () => {
                   setStudent={setStudent} {...item} />
               })
             }
-            {/* <div class="pagination">
-            <div>Previous</div>
-            <div>Page 1 of 12</div>
-            <div>Next</div>
-          </div> */}
+         
 
           </tbody>
         </table>
@@ -51,10 +47,11 @@ const TopStudents = () => {
         {showStudent && (
           <StudentModal
             setShowStudent={setShowStudent}
-            img={student?.img}
+            img={student?.imgstud}
             namestud={student?.namestud}
             subjects={student?.subjects}
             projects={student?.projects}
+            teacher={student?.teacher}
           />
         )}
 

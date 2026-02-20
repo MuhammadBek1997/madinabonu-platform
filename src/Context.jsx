@@ -244,45 +244,172 @@ const AppProvider = ({ children }) => {
     let students = [
         {
             id: 1,
-            img: "/images/fotoTeacher.png",
+            imgstud: "/images/student-rasm.png",
             namestud: "Rahmonberdiev ",
             subjects: "Fizika",
-            projects: "lalala"
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
+        },
+        {
+            id: 1,
+            imgstud: "/images/student-rasm.png",
+            namestud: "Rahmonberdiev ",
+            subjects: "Fizika",
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
+        },
+        {
+            id: 1,
+            imgstud: "/images/student-rasm.png",
+            namestud: "Rahmonberdiev ",
+            subjects: "Fizika",
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
+        },
+        {
+            id: 1,
+            imgstud: "/images/student-rasm.png",
+            namestud: "Rahmonberdiev ",
+            subjects: "Fizika",
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
+        },
+        {
+            id: 1,
+            imgstud: "/images/student-rasm.png",
+            namestud: "Rahmonberdiev ",
+            subjects: "Fizika",
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
+        },
+        {
+            id: 1,
+            imgstud: "/images/student-rasm.png",
+            namestud: "Rahmonberdiev ",
+            subjects: "Fizika",
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
+        },
+        {
+            id: 1,
+            imgstud: "/images/student-rasm.png",
+            namestud: "Rahmonberdiev ",
+            subjects: "Fizika",
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
+        },
+        {
+            id: 1,
+            imgstud: "/images/student-rasm.png",
+            namestud: "Rahmonberdiev ",
+            subjects: "Fizika",
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
+        },
+        {
+            id: 1,
+            imgstud: "/images/student-rasm.png",
+            namestud: "Rahmonberdiev ",
+            subjects: "Fizika",
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
+        },
+        {
+            id: 1,
+            imgstud: "/images/student-rasm.png",
+            namestud: "Rahmonberdiev ",
+            subjects: "Fizika",
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
+        },
+        {
+            id: 1,
+            imgstud: "/images/student-rasm.png",
+            namestud: "Rahmonberdiev ",
+            subjects: "Fizika",
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
+        },
+        {
+            id: 1,
+            imgstud: "/images/student-rasm.png",
+            namestud: "Rahmonberdiev ",
+            subjects: "Fizika",
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
+        },
+        {
+            id: 1,
+            imgstud: "/images/student-rasm.png",
+            namestud: "Rahmonberdiev ",
+            subjects: "Fizika",
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
+        },
+        {
+            id: 1,
+            imgstud: "/images/student-rasm.png",
+            namestud: "Rahmonberdiev ",
+            subjects: "Fizika",
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
+        },
+        {
+            id: 1,
+            imgstud: "/images/student-rasm.png",
+            namestud: "Rahmonberdiev ",
+            subjects: "Fizika",
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
+        },
+        {
+            id: 1,
+            imgstud: "/images/student-rasm.png",
+            namestud: "Rahmonberdiev ",
+            subjects: "Fizika",
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
         },
         {
             id: 2,
-            img: "/images/fotoTeacher.png",
+            imgstud: "/images/student-rasm.png",
             namestud: "Rahmonberdiev ",
             subjects: "Fizika",
-            projects: "lalala"
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
         },
         {
             id: 3,
-            img: "/images/fotoTeacher.png",
+            imgstud: "/images/student-rasm.png",
             namestud: "Rahmonberdiev ",
             subjects: "Fizika",
-            projects: "lalala"
+            projects: "lalala",
+            
+            teacher:"Raxmonberdiyev G'iyos"
         },
         {
             id: 4,
-            img: "/images/fotoTeacher.png",
+            imgstud: "/images/student-rasm.png",
             namestud: "Rahmonberdiev ",
             subjects: "Fizika",
-            projects: "lalala"
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
         },
         {
             id: 5,
-            img: "/images/fotoTeacher.png",
+            imgstud: "/images/student-rasm.png",
             namestud: "Rahmonberdiev ",
             subjects: "Fizika",
-            projects: "lalala"
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
         },
         {
             id: 6,
-            img: "/images/fotoTeacher.png",
+            imgstud: "/images/student-rasm.png",
             namestud: "Rahmonberdiev ",
             subjects: "Fizika",
-            projects: "lalala"
+            projects: "lalala",
+            teacher:"Raxmonberdiyev G'iyos"
         },
 
     ]
@@ -290,6 +417,24 @@ const AppProvider = ({ children }) => {
 
 
 
+const[dataStore,setDataStore] = useState([])
+  
+const gerStore = async() =>{
+    try{
+        await fetch('https://fakestoreapi.com/products')
+        .then(response => response.json())
+        .then(data => console.log(data));
+    }catch(error) {
+        console.log(error)
+    }
+}
+
+console.log(dataStore)
+
+
+useEffect(()=>{
+    gerStore()
+},[])
 
 
     return (
